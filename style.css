@@ -12,9 +12,9 @@ html{
     scroll-behavior: smooth;}
 /* reset */
 :root{
-    --fontTitulo: 400 60px 'Opti-Regular',sans-serif;
-    --fontSubTitulo: 400 50px 'Decol-regular';
-    --fontTexto: 400 35px 'Opti-regular';
+    --fontTitulo: 400 40px 'Opti-Regular',sans-serif;
+    --fontSubTitulo: 400 30px 'Decol-regular';
+    --fontTexto: 400 25px 'Opti-regular';
 
     --amarelo1:#FAD039;
     --amarelo2: rgba(250, 237, 57, 0.63);
@@ -54,6 +54,8 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
+.prototipo{
+    background-color: var(--cinza);}
 #main .linha2{
     margin: 0;}
 .conteudo{ 
@@ -78,7 +80,7 @@ html{
 .section1{
     margin-bottom: 150px;}
 .imagemFerreiro{
-    width: 475px;}
+    width: 400px;}
 .forja{
     margin-top: 250px;
     width: 800px;
@@ -112,9 +114,8 @@ html{
     color: var(--branco);
     font-size: 50px;}
 .sketche{
-    width: 905px;
-    height: 1195.283px;
-    background-color: var(--cinza);}
+    width: 620px;
+    height: 870px;}
 .legenda{
     font: var(--fontTexto);
     font-size: 28px;
