@@ -40,11 +40,9 @@ html{
     height: 100vh;
     background-position:bottom;}
 #RightStar{
-    margin: 0 0 31.25rem 18.75rem;
-    width: 4rem;}
+    margin: 0 0 31.25rem 18.75rem;}
 #LeftStar{
-    margin: 28.125rem 18.75rem 0 0;
-    width: 4rem;}
+    margin: 28.125rem 18.75rem 0 0;}
 .linha1{
     background: var(--amarelo1);
     height: 65px;
@@ -54,13 +52,14 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
+.conteudo{
+    width: 900px;}
+.star{
+    width: 64px;}
 .prototipo{
     background-color: var(--cinza);}
 #main .linha2{
     margin: 0;}
-.conteudo{ 
-    width: 934px;
-    margin: 50px 0;}
 .titulo{
     font: var(--fontTitulo);
     text-align: center;}
@@ -75,9 +74,10 @@ html{
     margin: 15px 0 30px;}
 .texto{
     font: var(--fontTexto);
-    text-align: center;}
-/* Parte 1 */
-.section1{
+    text-align: center;
+    margin: 5px 0;}
+/* Parte 1 */   
+#forja{
     margin-bottom: 150px;}
 .imagemFerreiro{
     width: 400px;}
@@ -92,11 +92,11 @@ html{
     width: 450px;
     border: 1.2px var(--preto) solid;
     margin-bottom: 30px;}
-.conteiner1{
+#forja .conteiner{
     justify-content: space-around;
     height: 250vh;}
 /* Parte 2 */
-.section2{
+#nossoTrabalho{
     background: var(--fundoRoxo1);}
 .logoMain,
 .tituloLogo{
@@ -110,7 +110,7 @@ html{
     width: 20vw;}
 .saturno{
     margin-top: 150px;}
-#tituloSketches{
+#nossoTrabalho .titulo{
     color: var(--branco);
     font-size: 50px;}
 .sketche{
@@ -120,18 +120,65 @@ html{
     font: var(--fontTexto);
     font-size: 28px;
     color: var(--branco);}
-.section2 .conteudo{
+#nossoTrabalho .conteudo{
     color: var(--branco);
     margin: 300px 0;}
-.section2 .titulo{
+#nossoTrabalho .titulo{
     margin-bottom: 150px;}
 /* Parte 3 */
-.section3{
-    background: var(--fundoRoxo2);
-    height: 1000vh;}
+#nossaHistoria{
+    background: var(--fundoRoxo2);}
 .textoLogo{
     color: var(--branco);
     font: var(--fontSubTitulo);
     margin: 30px 0;}
-.section3 .linhaLogo{
-    width: 15vw;}
+.conteudoImagem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 500px;
+    align-items: center;}
+#nossaHistoria .prototipo{
+    width: 620px;
+    height: 870px;}
+#nossaHistoria .conteudoImagem .conteudo{
+    width: 600px;
+    margin: 200px 0 0 100px;
+    color: var(--branco);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;}
+#nossaHistoria .imagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;}
+#nossaHistoria .imagem .star{
+    margin: 0 95px 25px 0;}
+#nossaHistoria .conteudoImagem .conteudo .star{
+    margin: 350px 0 0 300px;}
+#nossaHistoria .conteudo{
+    color: var(--branco);
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+#nossaHistoria .conteudo .texto{
+    margin: 30px;}
+#nossaHistoria .conteudo .star{
+    margin: 120px 0 0;}
+/* Parte 4 */
+
+
+
+
+
+
+
+
+
+
+
