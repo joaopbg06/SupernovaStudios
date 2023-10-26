@@ -16,22 +16,34 @@ html{
     --fontSubTitulo: 400 30px 'Decol-regular';
     --fontTexto: 400 25px 'Opti-regular';
 
-    --amarelo1:#FAD039;
-    --amarelo2: rgba(250, 237, 57, 0.63);
+    --roxo1:#8F3DA3;
+    --roxo2: #FFA1F6;
     --cinza: #D9D9D9;
     --branco: #fff;
     --preto: #000;
 
     --fundoRoxo1: linear-gradient(0deg, rgba(162, 73, 147, 0.86) 86.4%, rgba(124, 42, 232, 0.74) 98.04%);
     --fundoRoxo2: linear-gradient(180deg, #A758A4 0%, #9E62EE 25.42%);
+    --corDivicao: linear-gradient(0deg, rgba(149, 70, 154, 0.21) 0%, rgba(149, 70, 154, 0.21) 100%), linear-gradient(0deg, rgba(165, 75, 185, 0.24) 0%, rgba(165, 75, 185, 0.24) 100%), linear-gradient(0deg, #AF62A2 44.02%, #AF62A2 161.97%);
 }
 @font-face {font-family: 'Opti-Regular' ;
     src: url(font/Kaisei_Opti/KaiseiOpti-Regular.ttf);}
 @font-face {font-family: 'Decol-Regular' ;
     src: url(font/Kaisei_Decol/KaiseiDecol-Regular.ttf);}
+/* Animação */
+@keyframes orbita {
+    0%{
+        margin-top: 0;
+    }
+
+    50%{
+        margin-top: 10px;
+    }
+}
 /* header */
 .logo{
-    width: 18.75rem;}
+    width: 18.75rem;
+    /* animation: infinite orbita 2s;} */}
 .fundo{
     display: flex;
     justify-content: center;
@@ -44,18 +56,22 @@ html{
 #LeftStar{
     margin: 28.125rem 18.75rem 0 0;}
 .linha1{
-    background: var(--amarelo1);
+    background: var(--roxo1);
     height: 65px;
     margin: 12px 0 0;}
 .linha2{
-    background: var(--amarelo2);
+    background: var(--roxo  2);
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
+.divicao{
+    background: var(--corDivicao);
+    height: 259px;}
 .conteudo{
     width: 900px;}
 .star{
-    width: 64px;}
+    width: 64px;
+    animation: infinite orbita 3s;}
 .prototipo{
     background-color: var(--cinza);}
 #main .linha2{
