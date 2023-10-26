@@ -38,8 +38,7 @@ html{
 
     50%{
         margin-top: 10px;
-    }
-}
+    }}
 /* header */
 .logo{
     width: 18.75rem;
@@ -51,16 +50,17 @@ html{
     background-image: url(img/Fundo.png);
     height: 100vh;
     background-position:bottom;}
-#RightStar{
-    margin: 0 0 31.25rem 18.75rem;}
 #LeftStar{
-    margin: 28.125rem 18.75rem 0 0;}
+    margin-bottom: -300px;
+    margin-left: -300px;}
+#RightStar{
+    margin: 0 0 500px 300px;}
 .linha1{
     background: var(--roxo1);
     height: 65px;
     margin: 12px 0 0;}
 .linha2{
-    background: var(--roxo  2);
+    background: var(--roxo2);
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
@@ -154,26 +154,21 @@ html{
     justify-content: space-around;
     margin-top: 500px;
     align-items: center;}
+#nossaHistoria .imagem{
+    display: flex;
+    height: 1000px;}
 #nossaHistoria .prototipo{
     width: 620px;
     height: 870px;}
 #nossaHistoria .conteudoImagem .conteudo{
-    width: 600px;
-    margin: 200px 0 0 100px;
-    color: var(--branco);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    text-align: left;}
+    width: 550px;
+    color: var(--branco);}
 #nossaHistoria .imagem{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    align-items: center;    
     justify-content: space-between;}
 #nossaHistoria .imagem .star{
-    margin: 0 95px 25px 0;}
+    margin:0 25px;}
 #nossaHistoria .conteudoImagem .conteudo .star{
     margin: 350px 0 0 300px;}
 #nossaHistoria .conteudo{
@@ -182,11 +177,13 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;}
-#nossaHistoria .conteudo .texto{
-    margin: 30px;}
-#nossaHistoria .conteudo .star{
-    margin: 120px 0 0;}
-/* Parte 4 */
+.historiaStar{
+    margin-left: 80%;}
+
+
+
+
+
 
 
 
