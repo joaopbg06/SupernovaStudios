@@ -182,8 +182,13 @@ html{
     display: flex;
     justify-content: space-between;
     width: 100%;}  
-
-
+#nossaHistoria #conteudo{
+    width: 85vw;
+    height: 600px;  
+    margin-top: 0px;}
+#conteudo .texto{
+    margin: 30px 0;}
+/* Parte 4 */
 
 
 
