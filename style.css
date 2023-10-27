@@ -33,11 +33,11 @@ html{
 /* Animação */
 @keyframes orbita {
     0%{
-        margin-top: 0;
+        padding-top: 0;
     }
 
     50%{
-        margin-top: 10px;
+        padding-top: 10px;
     }}
 /* header */
 .logo{
@@ -107,7 +107,7 @@ html{
 .subLinha{
     width: 450px;
     border: 1.2px var(--preto) solid;
-    margin-bottom: 30px;}
+    margin: 30px 0 0;}
 #forja .conteiner{
     justify-content: space-around;
     height: 250vh;}
@@ -130,8 +130,8 @@ html{
     color: var(--branco);
     font-size: 50px;}
 .sketche{
-    width: 620px;
-    height: 870px;}
+    width: 1400px;
+    height: 700px;}
 .legenda{
     font: var(--fontTexto);
     font-size: 28px;
@@ -177,8 +177,12 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;}
-.historiaStar{
-    margin-left: 80%;}
+#historiaStar{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;}  
+
 
 
 
