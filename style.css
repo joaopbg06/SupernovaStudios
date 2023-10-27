@@ -12,6 +12,9 @@ html{
     scroll-behavior: smooth;}
 /* reset */
 :root{
+    --StarPadrao: 64px;
+    --StarGrande: 200px;
+
     --fontTitulo: 400 40px 'Opti-Regular',sans-serif;
     --fontSubTitulo: 400 30px 'Decol-regular';
     --fontTexto: 400 25px 'Opti-regular';
@@ -24,7 +27,7 @@ html{
 
     --fundoRoxo1: linear-gradient(0deg, rgba(162, 73, 147, 0.86) 86.4%, rgba(124, 42, 232, 0.74) 98.04%);
     --fundoRoxo2: linear-gradient(180deg, #A758A4 0%, #9E62EE 25.42%);
-    --corDivicao: linear-gradient(0deg, rgba(149, 70, 154, 0.21) 0%, rgba(149, 70, 154, 0.21) 100%), linear-gradient(0deg, rgba(165, 75, 185, 0.24) 0%, rgba(165, 75, 185, 0.24) 100%), linear-gradient(0deg, #AF62A2 44.02%, #AF62A2 161.97%);
+    --corDivicao: linear-gradient(163deg, #AF62A2 -82.34%, #AF62A2 -8.41%, #A758A4 90.89%);
 }
 @font-face {font-family: 'Opti-Regular' ;
     src: url(font/Kaisei_Opti/KaiseiOpti-Regular.ttf);}
@@ -64,13 +67,19 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
+.miniTitulo{
+    font: var(--fontTexto);
+    text-align: center;}
+.StarGrande{
+    width: var(--StarGrande);
+    animation: infinite orbita 4.5s;}
 .divicao{
     background: var(--corDivicao);
     height: 259px;}
 .conteudo{
     width: 900px;}
 .star{
-    width: 64px;
+    width: var(--StarPadrao);
     animation: infinite orbita 3s;}
 .prototipo{
     background-color: var(--cinza);}
@@ -185,12 +194,24 @@ html{
 #nossaHistoria #conteudo{
     width: 85vw;
     height: 600px;  
-    margin-top: 0px;}
+    margin: 0px;}
 #conteudo .texto{
     margin: 30px 0;}
 /* Parte 4 */
-
-
+#personagens{
+    height: 200vh;
+    background: var(--fundoRoxo1);
+    color: var(--branco);}
+#personagens .prototipo{
+    width: 620px;
+    height: 870px;}
+#personagens .conteudo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 200px;}
+#personagens .texto{
+    width: 600px;}
 
 
 
