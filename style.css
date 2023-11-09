@@ -12,8 +12,11 @@ html{
     scroll-behavior: smooth;}
 /* reset */
 :root{
+    --StarPequeno: 30px;
     --StarPadrao: 64px;
     --StarGrande: 200px;
+
+    --StarGrandeAltura: 210px;
 
     --fontTitulo: 400 40px 'Opti-Regular',sans-serif;
     --fontSubTitulo: 400 30px 'Decol-regular';
@@ -67,12 +70,36 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
+.starPequena{
+    width: var(--StarPequeno);
+    animation: infinite orbita 3s;}
+.textoLogo{
+    color: var(--branco);
+    font: var(--fontSubTitulo);
+    margin: 30px 0;
+    text-align: center;}
+.inverter{
+    flex-direction: row-reverse;}
+.logoMain,
+.tituloLogo,
+.divisaoLogo{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 100px;}
+.conteudoTexto{
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;}
 .miniTitulo{
     font: var(--fontTexto);
     text-align: center;}
-.StarGrande{
+.starGrande{
     width: var(--StarGrande);
-    animation: infinite orbita 4.5s;}
+    height: var(--StarGrandeAltura);
+    animation: infinite orbita 3s;}
 .divicao{
     background: var(--corDivicao);
     height: 259px;}
@@ -123,13 +150,6 @@ html{
 /* Parte 2 */
 #nossoTrabalho{
     background: var(--fundoRoxo1);}
-.logoMain,
-.tituloLogo{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 100px;}
 .linhaLogo{
     border: 1px var(--branco) solid;
     width: 20vw;}
@@ -153,10 +173,6 @@ html{
 /* Parte 3 */
 #nossaHistoria{
     background: var(--fundoRoxo2);}
-.textoLogo{
-    color: var(--branco);
-    font: var(--fontSubTitulo);
-    margin: 30px 0;}
 .conteudoImagem{
     display: flex;
     align-items: center;
@@ -199,7 +215,6 @@ html{
     margin: 30px 0;}
 /* Parte 4 */
 #personagens{
-    height: 200vh;
     background: var(--fundoRoxo1);
     color: var(--branco);}
 #personagens .prototipo{
@@ -212,16 +227,24 @@ html{
     margin-top: 200px;}
 #personagens .texto{
     width: 600px;}
-
-
-
-
-
-
-
-
-
-
-
-
+#personagens .divisaoLogo .linhaLogo{
+    width: 35vw;}
+#personagens .divisaoLogo{
+    height: 60px;
+    margin: 100px 0;}
+#personagens .inverter .conteudoTexto{
+    justify-content: space-evenly;}
+#firstStar{
+    position: absolute;
+    left: 40%;
+    top: 0; }
+#lastStar{
+    position: absolute;
+    left: -10px;
+    top: 830px;}
+#personagens .inverter{
+    position: relative;}
+#BigRightStar{
+    margin-left: 55%;
+    margin-top: 100px;}
 
