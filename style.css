@@ -28,6 +28,7 @@ html{
     --branco: #fff;
     --preto: #000;
 
+
     --fundoRoxo1: linear-gradient(0deg, rgba(162, 73, 147, 0.86) 86.4%, rgba(124, 42, 232, 0.74) 98.04%);
     --fundoRoxo2: linear-gradient(180deg, #A758A4 0%, #9E62EE 25.42%);
     --corDivicao: linear-gradient(163deg, #AF62A2 -82.34%, #AF62A2 -8.41%, #A758A4 90.89%);
@@ -131,6 +132,11 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
+.subtexto{
+    font: var(--fontTexto);
+    text-align: center;
+    margin: 5px 0;
+    color: var(--cinza) ;}
 .starPequena{
     width: var(--StarPequeno);
     animation: infinite orbita 3s;}
@@ -176,7 +182,8 @@ html{
 .titulo{
     font: var(--fontTitulo);
     text-align: center;}
-.conteiner{
+.conteiner,
+.sessao{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,7 +220,8 @@ html{
     background: var(--fundoRoxo1);}
 .linhaLogo{
     border: 1px var(--branco) solid;
-    width: 20vw;}
+    width: 20vw;
+    height: 1px;}
 .saturno{
     margin-top: 150px;}
 #nossoTrabalho .titulo{
@@ -290,13 +298,14 @@ html{
     justify-content: space-between;
     width: 100%;
     margin-top: 200px;}
-#personagens .texto{
+#personagens .texto,
+#personagens .subtexto{
     width: 600px;}
 #personagens .divisaoLogo .linhaLogo{
     width: 35vw;}
 #personagens .divisaoLogo{
     height: 60px;
-    margin: 100px 0;}
+    margin: 150px 0;}
 #personagens .inverter .conteudoTexto{
     justify-content: space-evenly;}
 #firstStar{
@@ -308,9 +317,55 @@ html{
     left: -10px;
     top: 830px;}
 #personagens .inverter{
-    position: relative;}
+    position: relative;
+    margin: 0;}
 #BigRightStar{
     margin-left: 55%;
     margin-top: 100px;}
+.sessao{
+    background: var(--fundoRoxo2);
+    width: 99vw;
+    margin-top: 100px;}
+.sessao .star{
+    height: 80px;
+    margin-right: 75%;
+    margin-top: 50px}
+.sessao .conteudo{
+    justify-content: center;
+    display: flex;}
+.divisaoTextoEstrela{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;}
+.divisaoTextoEstrela .star,
+.sessao .tituloLogo .star{
+    margin: 0;}
+#personagens .sessao .conteudo{
+    justify-content: space-around}
+.linhaTexto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0 250px;
+    align-items: center;
+    justify-content: center;}
+.linhaTopTexto{
+    width: 85%;
+    height: 1px;
+    background-color: var(--branco);}
+#personagens .sessao .linhaTexto p{
+    width: 85%;
+    margin: 30px 0;}
+.linhaBottomTexto{
+    width: 35vw;
+    height: 1px;
+    background-color: var(--branco);}
+.sessao .tituloLogo{
+    width: 85%;
+}
+
+
+
 
 
