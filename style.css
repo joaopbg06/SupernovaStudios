@@ -22,13 +22,19 @@ html{
     --fontSubTitulo: 400 30px 'Decol-regular';
     --fontTexto: 400 25px 'Opti-regular';
 
+    --fontTituloFooter: 400 30px 'Opti-Regular',sans-serif;
+    --fontSubTituloFooter: 400 20px 'Decol-regular';
+    --fontTextoFotter: 400 15px 'Opti-regular';
+
+
+    --roxoEscuro: #661EAB;
     --roxo1:#8F3DA3;
     --roxo2: #FFA1F6;
     --cinza: #D9D9D9;
     --branco: #fff;
     --preto: #000;
 
-
+    --fundoBrancoRoxo: linear-gradient(0deg, rgba(104, 42, 167, 0.65) -33.65%, rgba(255, 161, 246, 0.00) 138.46%);
     --fundoRoxo1: linear-gradient(0deg, rgba(162, 73, 147, 0.86) 86.4%, rgba(124, 42, 232, 0.74) 98.04%);
     --fundoRoxo2: linear-gradient(180deg, #A758A4 0%, #9E62EE 25.42%);
     --corDivicao: linear-gradient(163deg, #AF62A2 -82.34%, #AF62A2 -8.41%, #A758A4 90.89%);
@@ -48,6 +54,14 @@ html{
 @font-face {font-family: 'Decol-Regular' ;
     src: url(font/Kaisei_Decol/KaiseiDecol-Regular.ttf);}
 /* Animação */
+@keyframes upHover {
+    0%{
+        
+    }
+
+    100%{
+        
+    }}
 @keyframes fontalicious {
     0% {
     font-family: 'analogist';
@@ -132,6 +146,15 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
+.icon:hover{
+    animation: upHover 0.3s linear forwards ;
+}
+#footer .titulo{
+    font: var(--fontTituloFooter);}
+#footer .texto{
+    font: var(--fontTextoFotter) ;}
+#footer .subTitulo{
+    font: var(--fontSubTituloFooter) ;}
 .subtexto{
     font: var(--fontTexto);
     text-align: center;
@@ -139,7 +162,7 @@ html{
     color: var(--cinza) ;}
 .starPequena{
     width: var(--StarPequeno);
-    animation: infinite orbita 3s;}
+    animation: infinite orbita 7s;}
 .textoLogo{
     color: var(--branco);
     font: var(--fontSubTitulo);
@@ -363,9 +386,104 @@ html{
     background-color: var(--branco);}
 .sessao .tituloLogo{
     width: 85%;
-}
-
-
+    padding-bottom: 15px;}
+/* Parte 5 */
+#estilo .card .imagem{
+    width:  350px;}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;}  
+.cards{
+    display: flex;
+    justify-content: space-around ;
+    align-items: start;
+    width: 100%;
+    margin: 50px 0;}
+#estilo .imagem{
+    width: 78%;}
+#bouce{
+    margin: 50px 0 200px;
+    animation: infinite orbita 5s;
+    height: 800px;}
+/* footer */
+#footer{
+    color: var(--branco);
+    position: relative;}
+.divInicial{
+    background: var(--fundoBrancoRoxo);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;}
+.divFinal{
+    background-color: var(--roxoEscuro);
+    width: 100%;
+    height: 50px;}
+#footer .fundo{
+    background-position: 50% 20%;}
+#footer .conteiner{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;}
+.patrocinadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+    justify-content: space-between;}
+.icones{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;}
+.divisaoEstrelas .linhaLogo{
+    width: 15vw;}
+.divisaoEstrelas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;}
+#footer .starPequena{
+    height: 30px;}
+.iconesDivulgacao{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;}
+.iconesDivulgacao .icon{
+    width: 50px;}
+.divulgacao{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;}
+.parteRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;}
+.apoiar .icon{
+    width: 90px;}
+.apoiar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;}
+.cantinho{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 500px;
+    text-align: left;}
+.parteLeft{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;}
+#footer .logo,
+#footer .patrocinadores{
+    margin-bottom: 100px;}
 
 
 
