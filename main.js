@@ -1,16 +1,22 @@
-document.querySelector('#carregar').addEventListener("click", function () {
-    document.getElementById('carregar').style.opacity = 0;
-    barraProgresso.style.display = 'block';
-    textoCarregamento.style.display = 'block';
-    divProgresso.style.display = 'block';
+let frases = [
+    "",
+    "Preparando para a criação",
+    "Pegando o Martelo e a Bigorna",
+    "Forjando uma nova estrela",
+    "Estrela sendo forjada aguarde",
+    "Estrelas e mais Estrelas MUITAS Estrelas",
+    "Estrela forjada",
+    "Ei Geppetto sai da tela de Loading!!!",
+    "Você tá realmente lendo isso?",
+    "Tudo Pronto!"
 
-    iniciarContador();
-});
+];
 
 let barraProgresso = document.querySelector('#barraProgresso');
 let textoCarregamento = document.querySelector('.textoCarregamento');
 let divProgresso = document.querySelector('#progresso');
 let telaCarregamento = document.querySelector(".telaCarregamento");
+let estrelasPequenas = document.querySelectorAll('.starPequena');
 
 let progresso = 0;
 let posicao = 0;
@@ -20,13 +26,17 @@ function trocarConteudo() {
     textoCarregamento.classList.add('fadeOut');
     setTimeout(() => {
         textoCarregamento.innerHTML = frases[contador];
+        console.log(contador)
         textoCarregamento.classList.remove('fadeOut');
-    }, 500); // Tempo deve coincidir com a duração da transição no CSS (0.5s no exemplo)
+        
+    }, 500); 
 }
 
 function atualizarContador() {
-    trocarConteudo();
+
     contador++;
+    trocarConteudo();
+
     progresso = (contador / 10) * 100;
     document.getElementById('progresso').style.width = progresso + '%';
 
@@ -49,16 +59,11 @@ function iniciarContador() {
     }   
 }
 
-let frases = [
-    "",
-    "Preparando para a criação",
-    "Pegando o Martelo e a Bigorna",
-    "Forjando uma nova estrela",
-    "Estrela sendo forjada aguarde",
-    "Estrelas e mais Estrelas MUITAS Estrelas",
-    "Estrela forjada",
-    "Ei Geppetto sai da tela de Loading!!!",
-    "Você tá realmente lendo isso? Ok então aqui vai um Poema",
-    "A rosa no cume...",
-    "Tudo Pronto!"
-];
+document.querySelector('#carregar').addEventListener("click", function () {
+    document.getElementById('carregar').style.opacity = 0;
+    barraProgresso.style.display = 'block';
+    textoCarregamento.style.display = 'block';
+    divProgresso.style.display = 'block';
+
+    iniciarContador();
+});

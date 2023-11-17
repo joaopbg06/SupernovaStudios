@@ -55,6 +55,15 @@ html{
 @font-face {font-family: 'Decol-Regular' ;
     src: url(font/Kaisei_Decol/KaiseiDecol-Regular.ttf);}
 /* Animação */
+@keyframes scroll{
+    from {
+        opacity: 0;
+        clip-path: inset(45% 20% 45% 20%);
+    }
+    to{
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);
+    }}
 @keyframes drop {
     0% {
         top: -50%;
@@ -108,6 +117,10 @@ html{
         padding-top: 10px;
     }}
 /* header */
+
+#header .planeta{
+    animation: infinite orbita 8s;
+    height: 100%;}
 .texto-logo {
     animation-name: fontalicious;
     animation-iteration-count: 4;
@@ -165,7 +178,7 @@ html{
     color: var(--cinza) ;}
 .starPequena{
     width: var(--StarPequeno);
-    animation: infinite orbita 7s;}
+    animation: 10s orbita infinite;}
 .textoLogo{
     color: var(--branco);
     font: var(--fontSubTitulo);
@@ -491,11 +504,11 @@ html{
 .btnCarregar {
     position: relative;
     padding: 12px 35px;
-    background: var(--roxo1);
-    color: #181818;
-    border: 3px solid var(--roxo1);
+    background: var(--roxoDiferente);
+    color: var(--branco);
+    border: 3px solid var(--preto);
     border-radius: 8px;
-    box-shadow: 0 0 0 var(--roxo1);
+    box-shadow: 0 0 0 var(--roxoDiferente);
     transition: all 1s ease-in-out;
     cursor: pointer;
     font: var(--fontTexto);}
@@ -651,8 +664,8 @@ html{
     width: 1px;
     height: 100%;
     top: 0;
-    left: 50%;
-    background: rgba(255, 255, 255, 0.1);
+    left: 40%;
+    background: transparent;
     overflow: hidden;}
 .line::after {
     content: '';
@@ -667,11 +680,11 @@ html{
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);}
 .line:nth-child(1) {
-    margin-left: -25%;}
+    margin-left: -30%;}
 .line:nth-child(1)::after {
     animation-delay: 2s;}
 .line:nth-child(3) {
-    margin-left: 25%;}
+    margin-left: 50%;}
 .line:nth-child(3)::after {
     animation-delay: 2.5s;}
 .starCarregar1{
@@ -681,15 +694,15 @@ html{
 .starCarregar2{
     position: absolute;
     right: 120px;
-    bottom: 100px;}
+    top: 500px;}
 .starCarregar3{
     position: absolute;
     right: 430px;
-    bottom: 10px;}
+    top: 900px;}
 .starCarregar4{
     position: absolute;
     left: 450px;
-    bottom: 120px;}
+    top: 720px;}
 .starCarregar5{
     position: absolute;
     right: 50px;
@@ -698,8 +711,6 @@ html{
     position: absolute;
     top: 20px;
     right: 650px;}
-
-
 
 
 
