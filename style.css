@@ -55,14 +55,13 @@ html{
 @font-face {font-family: 'Decol-Regular' ;
     src: url(font/Kaisei_Decol/KaiseiDecol-Regular.ttf);}
 /* Animação */
-@keyframes scroll{
-    from {
-        opacity: 0;
-        clip-path: inset(45% 20% 45% 20%);
+@keyframes widthBolinhaProgresso {
+    0%{
+        width: 0;
     }
-    to{
-        opacity: 1;
-        clip-path: inset(0% 0% 0% 0%);
+
+    100%{
+        width: 100%;
     }}
 @keyframes drop {
     0% {
@@ -117,14 +116,11 @@ html{
         padding-top: 10px;
     }}
 /* header */
-
 #header .planeta{
     animation: infinite orbita 8s;
     height: 100%;}
 .texto-logo {
-    animation-name: fontalicious;
-    animation-iteration-count: 4;
-    animation-duration: 1s;
+    transition-delay: 1s;
     text-align: center;
     height: 100px;
     margin-bottom: 100px;
@@ -159,9 +155,21 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
-#header,
-#main,
-#footer,
+#main, #footer {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;}
+#header {
+    transition-delay: 0.1s;}
+/*Adiciona um atraso para que o header apareça após a telaCarregamento} */
+.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;}
+.fadeOut {
+    opacity: 0 !important;}
 #barraProgresso,
 .textoCarregamento{
     display: none;}
@@ -176,9 +184,6 @@ html{
     text-align: center;
     margin: 5px 0;
     color: var(--cinza) ;}
-.starPequena{
-    width: var(--StarPequeno);
-    animation: 10s orbita infinite;}
 .textoLogo{
     color: var(--branco);
     font: var(--fontSubTitulo);
@@ -202,18 +207,11 @@ html{
 .miniTitulo{
     font: var(--fontTexto);
     text-align: center;}
-.starGrande{
-    width: var(--StarGrande);
-    height: var(--StarGrandeAltura);
-    animation: infinite orbita 3s;}
 .divicao{
     background: var(--corDivicao);
     height: 259px;}
 .conteudo{
     width: 900px;}
-.star{
-    width: var(--StarPadrao);
-    animation: infinite orbita 3s;}
 .prototipo{
     background-color: var(--cinza);}
 #main .linha2{
@@ -266,9 +264,32 @@ html{
 #nossoTrabalho .titulo{
     color: var(--branco);
     font-size: 50px;}
-.sketche{
-    width: 1400px;
-    height: 700px;}
+.carrossel{
+    height: 700px;
+    position: relative;}
+#carrosselImagem{
+    transition: 0.5s;
+    height: 700px}
+.bolinha {
+    width: 13px;
+    height: 13px;
+    border-radius: 12px;
+    margin: 15px 5px 0;
+    background-color: transparent;
+    border: var(--roxo1) 3px solid;
+    cursor: pointer;
+    transition: all 0.6s;}
+.bolinha.ativa{
+    width: 40px;}
+.bolinha.ativa .progressoCarrossel{
+    background-color: var(--amarelo);
+    width: 0;
+    height: 100%;
+    border-radius: 12px;
+    animation: widthBolinhaProgresso 8s forwards linear;}
+#progressoCarrossel{
+    display: flex;
+    justify-content: center;}
 .legenda{
     font: var(--fontTexto);
     font-size: 28px;
@@ -622,7 +643,6 @@ html{
 .fil0 {
     fill: #FFFDEF}
 .telaCarregamento{
-    width: 100vw;
     height: 100vh;
     background-color: var(--preto);
     display: flex;
@@ -634,7 +654,8 @@ html{
     height: 30px;
     background-color: transparent;
     border-radius: 8px;
-    margin-bottom: 100px;}
+    margin-bottom: 100px;
+    transition: opacity 0.5s ease-in-out;}
 #progresso{
     height: 100%;
     width: 0;
@@ -649,8 +670,6 @@ html{
     transition: opacity 0.5s ease-in-out;
     opacity: 1;
     text-shadow: 1px 1px 5px var(--amarelo);}
-.fadeOut {
-    opacity: 0 !important;}
 .lines {
     position: absolute;
     top: 0;
@@ -711,6 +730,41 @@ html{
     position: absolute;
     top: 20px;
     right: 650px;}
+.iconCheck{
+    color: var(--branco);
+    margin-bottom: 100px;}
+.iconCheck i{
+    height: 20px;}
+#check{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity  1s ease-in;}
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;}
+::-webkit-scrollbar-thumb {
+    background-color: var(--amarelo);}
+::-webkit-scrollbar-track {
+    background-color: var(--roxoDiferente);}
+/* Velocidade star */
+.lento{
+    animation: 10s orbita infinite;}
+.medio{
+    animation: infinite orbita 5s;}
+.rapido{
+    animation: infinite orbita 3s;}
+.starPequena{
+    width: var(--StarPequeno);}
+.starGrande{
+    width: var(--StarGrande);
+    height: var(--StarGrandeAltura);}
+.star{
+    width: var(--StarPadrao);}
+
+
 
 
 
