@@ -130,9 +130,13 @@ document.querySelector('#carregar').addEventListener("click", function () {
 const IMAGENS = [
     'img/imagem1.png', 
     'img/imagem2.png', 
+    'img/imagem3.png',
+    'img/imagem4.png'
 ];
 
 let imgIndice = 0;
+
+
 const IMG = document.getElementById('carrosselImagem');
 const bolinhas = document.querySelectorAll('.bolinha');
 const progressoCarrossel = document.querySelectorAll('.progressoCarrossel')
