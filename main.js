@@ -111,13 +111,15 @@ function mostrarSite(){
     setTimeout(function() {
         header.style.transition = "transform 1s ease-in-out, opacity 1s ease-in-out";
         header.style.transform = "translateY(0)"; // Move para a posição inicial (acima da viewport)
-      }, 10); // Ajuste conforme necessário
+      }, 100); // Ajuste conforme necessário
 
 
 }
 
 document.querySelector('#carregar').addEventListener("click", function () {
     document.getElementById('carregar').style.opacity = 0;
+    document.getElementById('carregar').style.overflow = 'hidden'
+    document.getElementById('carregar').style.cursor = 'default'
     barraProgresso.style.display = 'block';
     textoCarregamento.style.display = 'block';
     divProgresso.style.display = 'block';
@@ -135,6 +137,7 @@ const IMAGENS = [
 ];
 
 let imgIndice = 0;
+let intervaloID;
 
 
 const IMG = document.getElementById('carrosselImagem');
@@ -168,15 +171,48 @@ function passarIMG() {
         imgIndice = 0;
         carregarImagem();
     }
+
+    clearInterval(intervaloID);
+    intervaloID = setInterval(passarIMG, 8000);
 }
 
 // Adiciona eventos de clique para as bolinhas
 bolinhas.forEach((bolinha, index) => {
     bolinha.addEventListener('click', () => {
         imgIndice = index;
+        clearInterval(intervaloID);
         carregarImagem();
+        intervaloID = setInterval(passarIMG, 8000);
     });
 });
 
+passarIMG()
 
-setInterval(passarIMG, 8000)
+// Animação Scroll
+
+const Observa = new IntersectionObserver((arrastar) => {
+    arrastar.forEach((rasta) =>{
+        if (rasta.isIntersecting) {
+        rasta.target.classList.add('depoisScroll')
+        } else{
+            rasta.target.classList.remove('depoisScroll')
+        }
+    })
+})
+
+const descerScroll = document.querySelectorAll(".descerScroll");
+const leftScroll = document.querySelectorAll(".leftScroll");
+const rightScroll = document.querySelectorAll(".rightScroll");
+const subirScroll = document.querySelectorAll(".subirScroll");
+
+descerScroll.forEach((descerScroll) => Observa.observe (descerScroll))
+leftScroll.forEach((leftScroll) => Observa.observe(leftScroll));
+rightScroll.forEach((rightScroll) => Observa.observe(rightScroll));
+subirScroll.forEach((subirScroll) => Observa.observe(subirScroll));
+
+
+
+
+
+
+

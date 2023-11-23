@@ -63,13 +63,6 @@ html{
     100%{
         width: 100%;
     }}
-@keyframes drop {
-    0% {
-        top: -50%;
-    }
-    100% {
-        top: 110%;
-    }}
 @keyframes fontalicious {
     0% {
     font-family: 'analogist';
@@ -168,6 +161,9 @@ html{
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
+.saturno{
+    animation: infinite orbita 8s;
+    height: 360px;}
 .fadeOut {
     opacity: 0 !important;}
 #barraProgresso,
@@ -259,8 +255,6 @@ html{
     border: 1px var(--branco) solid;
     width: 20vw;
     height: 1px;}
-.saturno{
-    margin-top: 150px;}
 #nossoTrabalho .titulo{
     color: var(--branco);
     font-size: 50px;}
@@ -648,7 +642,8 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 #barraProgresso{
     width: 400px;
     height: 30px;
@@ -717,11 +712,11 @@ html{
 .starCarregar3{
     position: absolute;
     right: 430px;
-    top: 900px;}
+    top: 700px;}
 .starCarregar4{
     position: absolute;
     left: 450px;
-    top: 720px;}
+    top: 620px;}
 .starCarregar5{
     position: absolute;
     right: 50px;
@@ -763,6 +758,35 @@ html{
     height: var(--StarGrandeAltura);}
 .star{
     width: var(--StarPadrao);}
+/* Scroll */
+.descerScroll{
+    transform: translateY(-100px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.subirScroll{
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.leftScroll{
+    transform: translatex(-50px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.rightScroll{
+    transform: translatex(50px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.depoisScroll{
+    transform: translateY(0);
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;}
+
+
 
 
 
