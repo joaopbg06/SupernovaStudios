@@ -210,9 +210,109 @@ leftScroll.forEach((leftScroll) => Observa.observe(leftScroll));
 rightScroll.forEach((rightScroll) => Observa.observe(rightScroll));
 subirScroll.forEach((subirScroll) => Observa.observe(subirScroll));
 
+//camera na estrela forjando
 
+var mediaStream;
+const btnCamera = document.getElementById('btnCamera');
+const tituloCamera = document.getElementById('tituloCamera');
+const camera = document.getElementById('camera');
+const tituloForja = document.getElementById('tituloForja');
+const btnFoto = document.getElementById('btnFoto');
+const foto = document.getElementById('foto');
+const tituloForjaTexto = document.getElementById('tituloForjaTexto');
 
+function abrirCamera(){
+    navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+        .then(function (stream) {
+            mediaStream = stream;
+            const areaVideo = document.getElementById('camera');
+            areaVideo.srcObject = stream;
+        })
+        .catch(function (error) {
+            console.error('erro ao acessar a camera:', error)
+        })
+}
 
+function tirarFoto() {
 
+    const areaVideo = document.getElementById('camera');
+    const canvas = document.createElement('canvas');
+    canvas.width = areaVideo.videoWidth;
+    canvas.height = areaVideo.videoHeight;
+    const context = canvas.getContext('2d');
+    context.drawImage(areaVideo, 0, 0, canvas.width, canvas.height);
+
+    const imageDataURL = canvas.toDataURL();
+
+    const fotoDiv = document.getElementById('foto');
+    fotoDiv.style.backgroundImage = `url(${imageDataURL})`;
+}
+
+btnCamera.addEventListener('click', () => {
+    
+    setTimeout(() => {
+        btnCamera.style.display = 'none'
+        tituloCamera.style.display = 'none'
+    }, 2000);
+
+    btnCamera.style.opacity = 0;
+    btnCamera.style.overflow = 'hidden';
+
+    tituloCamera.style.opacity = 0;
+    tituloCamera.style.overflow = 'hidden';
+
+    setTimeout(() => {
+        camera.style.display = 'block'
+    }, 1000)
+
+    setTimeout(() =>{
+        btnFoto.style.opacity = 1;
+        camera.style.opacity = 1;
+        tituloForja.style.opacity = 1;
+    }, 2000)
+
+    abrirCamera()
+})
+
+btnFoto.addEventListener('click', () => {
+    
+
+    setTimeout(() => {
+        camera.style.display = 'none'
+        btnFoto.style.display = 'none'
+        foto.style.display = 'block'
+    }, 1000);
+
+    camera.style.opacity = 0;
+    btnFoto.style.opacity = 0;
+    tituloForja.style.opacity = 0;
+
+    tituloForjaTexto.textContent = 'ESTRELA FORJADA'
+
+    setTimeout(() =>{
+        foto.style.opacity = 1;
+        tituloForja.style.opacity = 1;
+    }, 2000)
+
+    tirarFoto();
+
+})
+
+// flip
+let contClick = 0;
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        if(contClick === 0){
+            contClick++
+            card.style.transform = 'rotateY(0.5turn)'
+            
+        } else {
+            contClick = 0
+            card.style.transform = 'rotateY(0)'
+        }
+    });
+});
 
 

@@ -17,7 +17,7 @@
 
     <div class="telaCarregamento">
 
-        <div class="lines   ">
+        <div class="lines">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
@@ -401,28 +401,84 @@
 
                 <div class="cards descerScroll">
 
-                    <div class="card leftScroll">
+                    <div id="cardPrimeiro" class="card leftScroll">
+
                         <h2 class="titulo descerScroll">Lorem:</h2>
-                        <div class="flipCard">
+
+                        <div class="card__face">
+
                             <div class="imagem">
                                 <img src="img/desilucao.png" alt="">
                             </div>
+
                         </div>
+
+                        <div class="card__face card__face--back">
+
+                            <div class="conteudinho">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat repellendus voluptates! Libero rerum eius, aliquam nulla obcaecati doloribus fugiat sed dignissimos odit esse ratione sequi, numquam voluptates debitis vel.</p>
+                            </div>
+
+                        </div>
+
                     </div>
 
-                    <div class="card rightScroll">
+                    <div id="cardSegundo" class="card rightScroll">
+
                         <h2 class="titulo descerScroll">Lorem:</h2>
-                        <div class="flipCard">
+
+                        <div class="card__face">
+
                             <div class="imagem">
                                 <img src="img/liz.png" alt="">
                             </div>
+
                         </div>
+
+                        <div class="card__face card__face--back">
+
+                            <div class="conteudinho">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam placeat repellendus voluptates! Libero rerum eius, aliquam nulla obcaecati doloribus fugiat sed dignissimos odit esse ratione sequi, numquam voluptates debitis vel.</p>
+                            </div>
+
+                        </div>
+
                     </div>
+
 
                 </div>
 
 
-                <div id="bouce" class="imagem subirScroll"><img src="img/estilo.png" alt=""></div>
+                <div class="felipeLuz subirScroll">
+
+                    <div id="tituloForja" class="conteudoTitulo subirScroll">
+                        <h1 id="tituloForjaTexto" class="titulo">ESTRELA SENDO FORJADA</h1>
+                        <div class="subLinha"></div>
+                    </div>
+
+                    <div class="estrelaForja subirScroll">
+                        <h1 id="tituloCamera" class="titulo">ESTRELA EM FORJA</h1>
+
+                        <button id="btnCamera"  class="btnCamera">
+                            <div class="star subirScroll lento">
+                                <img src="img/Star.svg" alt="">
+                            </div>
+                        </button>
+
+                        <div id="foto"></div>
+
+                        <video id="camera" autoplay></video>
+
+                        
+                    
+                    </div>
+
+
+                    <div id="btnFoto" class="iconFoto">
+                        <i class="fa-solid fa-camera fa-2xl"></i>
+                    </div>
+
+                </div>
                 
 
             </div>

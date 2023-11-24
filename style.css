@@ -55,6 +55,13 @@ html{
 @font-face {font-family: 'Decol-Regular' ;
     src: url(font/Kaisei_Decol/KaiseiDecol-Regular.ttf);}
 /* Animação */
+@keyframes drop {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 110%;
+    }}
 @keyframes widthBolinhaProgresso {
     0%{
         width: 0;
@@ -148,19 +155,19 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
-#main, #footer {
+/* #main, #footer {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 #header {
-    transition-delay: 0.1s;}
+    transition-delay: 0.1s;} */
 /*Adiciona um atraso para que o header apareça após a telaCarregamento} */
-.hidden {
+/* .hidden {
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: opacity 1s ease-in-out, height 1s ease-in-out;}
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;} */
 .saturno{
     animation: infinite orbita 8s;
     height: 360px;}
@@ -267,20 +274,24 @@ html{
 .bolinha {
     width: 13px;
     height: 13px;
-    border-radius: 12px;
+    border-radius: 7px;
+    padding: 0 1px;
+    background-color: var(--roxo1);
     margin: 15px 5px 0;
-    background-color: transparent;
     border: var(--roxo1) 3px solid;
     cursor: pointer;
-    transition: all 0.6s;}
+    transition: all 1s;
+    display: flex;
+    align-items: center;}
 .bolinha.ativa{
     width: 40px;}
 .bolinha.ativa .progressoCarrossel{
-    background-color: var(--amarelo);
+    background-color: var(--roxo2);
     width: 0;
-    height: 100%;
-    border-radius: 12px;
-    animation: widthBolinhaProgresso 8s forwards linear;}
+    height: 25%;
+    border-radius: 1px;
+    animation: widthBolinhaProgresso 8s forwards linear;
+}
 #progressoCarrossel{
     display: flex;
     justify-content: center;}
@@ -419,25 +430,89 @@ html{
     width: 85%;
     padding-bottom: 15px;}
 /* Parte 5 */
-#estilo .card .imagem{
-    width:  350px;}
+.cards img {
+    width: 240px;
+    height: 300px;
+    object-fit: cover;}
 .card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 600px;}  
+    position: relative;
+    width: 240px;
+    height: 300px;
+    color: var(--cinza);
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    text-align: center;}  
 .cards{
     display: flex;
-    justify-content: space-around ;
-    align-items: start;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    margin: 50px 0;}
-#estilo .imagem{
-    width: 78%;}
-#bouce{
-    margin: 50px 0 200px;
-    animation: infinite orbita 5s;
-    height: 800px;}
+    margin: 50px 0;
+    perspective: 800px;}
+.card__face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));}
+
+.estrelaForja{
+    background-color: var(--cinza);
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--branco);}
+.btnCamera{
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 1s linear;}
+#tituloCamera{
+    transition: all 1s linear;}
+#camera{
+    transition: all 1s linear;
+    opacity: 0;
+    display: none;
+    width: 100%;
+    height: 90%;}
+#estilo .subLinha{
+    margin: 0 0 25px;}
+.felipeLuz{
+    margin: 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+#tituloForja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s linear;}
+.iconFoto{
+    cursor: pointer;
+    margin-top: 25px;
+    opacity: 0;
+    transition: all 1s linear;}
+#foto{
+    width: 90%;
+    height: 90%;
+    display: none;
+    opacity: 0;
+    transition: all 1s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;}
+#tituloForjaTexto{
+    transition: all 1s linear;}
+#btnCamera .star{
+    height: 80px;}
 /* footer */
 #footer{
     color: var(--branco);
