@@ -24,17 +24,14 @@
 .linha1 {
     background: var(--roxo1);
     height: 65px;
-    margin: 12px 0 0;
-    width: 860px;}
+    margin: 12px 0 0;}
 
 .linha2 {
     background: var(--roxo2);
     height: 51px;
-    margin-top: 12px;
-    width: 860px;}
+    margin-top: 12px;}
 
-.teladecarregamento {
-    width: 100%}
+
 
 .lines {
     position: absolute;
