@@ -1,0 +1,100 @@
+:root {
+    --StarPequeno: 15px;
+    --StarPadrao: 30px;
+    --StarGrande: 70px;
+
+    --StarGrandeAltura: 80px;
+
+    --fontTitulo: 400 20px 'Opti-Regular', sans-serif;
+    --fontSubTitulo: 400 10px 'Decol-regular';
+    --fontTexto: 400 8px 'Opti-regular';
+
+    --fontTituloFooter: 400 30px 'Opti-Regular', sans-serif;
+    --fontSubTituloFooter: 400 20px 'Decol-regular';
+    --fontTextoFotter: 400 15px 'Opti-regular';}
+
+
+.fundo {
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Fundo.png);
+    height: 100vh;
+    background-position: bottom;}
+
+.linha1 {
+    background: var(--roxo1);
+    height: 65px;
+    margin: 12px 0 0;
+    width: 860px;}
+
+.linha2 {
+    background: var(--roxo2);
+    height: 51px;
+    margin-top: 12px;
+    width: 860px;}
+
+.teladecarregamento {
+    width: 100%}
+
+.lines {
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    width: 90vw;}
+
+.starCarregar1{
+    left: 120px;
+    top: 198px;}
+.starCarregar2{
+    right: 120px;
+    top: 500px;}
+.starCarregar3{
+    right: 120px;
+    top: 100px;}
+.starCarregar4{
+    left: 90%;
+    top: 200px;}
+.starCarregar5{
+    left: 50px;
+    top: 500px;}
+.starCarregar6{
+    top: 600px;
+    right: 200px;}
+
+#barraProgresso{
+    width: 85vw;
+    height: 20px;
+    margin-top: 20px;}
+
+.texto-logo {
+    transition-delay: 1s;
+    text-align: center;
+    height: 100px;
+    margin-bottom: 100px;
+    color: var(--branco);
+    font-size: 50px;}
+#LeftStar{
+    display: none;}
+#RightStar{
+    display: none;}
+.subLinha{
+    width: 75vw;
+    margin-top: 15px;}
+.conteudo{
+    width: 80vw;}
+.forja{
+    width: 95vw;}
+.videoFerreiro{
+    width: 75vw;}
+.video{
+    width: 70vw;
+}
+
+
+
+
+
+
+
+
+

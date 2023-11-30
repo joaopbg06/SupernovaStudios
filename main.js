@@ -116,7 +116,7 @@
 
     }
 
-    document.querySelector('#carregar').addEventListener("click", function () {
+    function clickBtnCarregar(){
         document.getElementById('carregar').style.opacity = 0;
         document.getElementById('carregar').style.overflow = 'hidden'
         document.getElementById('carregar').style.cursor = 'default'
@@ -125,7 +125,8 @@
         divProgresso.style.display = 'block';
 
         iniciarContador();
-    });
+    }
+
 
     // Carrosel 
 
@@ -297,4 +298,35 @@
         tirarFoto();
 
     })
+
+// mobile
+
+window.onload = function() {
+    checkScreenSize();
+};
+
+window.onresize = function() {
+    checkScreenSize();
+};
+
+function checkScreenSize() {
+    if (window.innerWidth <= 425) {
+
+        document.querySelector('#carregar').addEventListener("click", function () {
+            setTimeout( () => {
+                clickBtnCarregar()
+            },1000)
+        });
+
+    } else {
+
+        document.querySelector('#carregar').addEventListener("click", function () {
+            clickBtnCarregar()
+        });
+        
+    }
+};
+
+
+
 

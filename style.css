@@ -152,10 +152,13 @@ html{
     height: 100vh;
     background-position:bottom;}
 #LeftStar{
-    margin-bottom: -300px;
-    margin-left: -300px;}
+    position: absolute;
+    top: 50px;
+    left: 5%;}
 #RightStar{
-    margin: 0 0 500px 300px;}
+    position: absolute;
+    top: 80%;
+    right: 5%;}
 .linha1{
     background: var(--roxo1);
     height: 65px;
@@ -165,7 +168,7 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
-#main, #footer {
+/* #main, #footer {
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -173,11 +176,11 @@ html{
 #header {
     transition-delay: 0.1s;} */
 /*Adiciona um atraso para que o header apareça após a telaCarregamento}*/
-.hidden {
+/* .hidden {
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: opacity 1s ease-in-out, height 1s ease-in-out;}
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;} */
 .saturno{
     animation: infinite orbita 8s;
     height: 360px;}
