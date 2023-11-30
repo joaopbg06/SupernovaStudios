@@ -55,6 +55,16 @@ html{
 @font-face {font-family: 'Decol-Regular' ;
     src: url(font/Kaisei_Decol/KaiseiDecol-Regular.ttf);}
 /* Animação */
+@keyframes animate {
+    0% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }}
 @keyframes drop {
     0% {
         top: -50%;
@@ -237,10 +247,14 @@ html{
     text-align: center;
     margin: 5px 0;}
 /* Parte 1 */   
+.video{
+    width: 500px;}
 #forja{
     margin-bottom: 150px;}
-.imagemFerreiro{
-    width: 400px;}
+.videoFerreiro{
+    width: 400px;
+    display: flex;
+    justify-content: center;}
 .forja{
     margin-top: 250px;
     width: 800px;
@@ -254,7 +268,7 @@ html{
     margin: 30px 0 0;}
 #forja .conteiner{
     justify-content: space-around;
-    height: 250vh;}
+    height: 150vh;}
 /* Parte 2 */
 #nossoTrabalho{
     background: var(--fundoRoxo1);}
@@ -290,8 +304,7 @@ html{
     width: 0;
     height: 25%;
     border-radius: 1px;
-    animation: widthBolinhaProgresso 8s forwards linear;
-}
+    animation: widthBolinhaProgresso 8s forwards linear;}
 #progressoCarrossel{
     display: flex;
     justify-content: center;}
@@ -311,11 +324,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 200px;
     align-items: center;}
-#nossaHistoria .imagem{
-    display: flex;
-    height: 1000px;}
 #nossaHistoria .prototipo{
     width: 620px;
     height: 870px;}
@@ -430,36 +439,78 @@ html{
     width: 85%;
     padding-bottom: 15px;}
 /* Parte 5 */
-.cards img {
-    width: 240px;
-    height: 300px;
-    object-fit: cover;}
-.card{
-    position: relative;
-    width: 240px;
-    height: 300px;
-    color: var(--cinza);
-    cursor: pointer;
-    transition: 1s ease-in-out;
-    transform-style: preserve-3d;
-    text-align: center;}  
 .cards{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin: 50px 0;
-    perspective: 800px;}
-.card__face {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin: 150px 0 0;}
+.cards .texto {
+    font: var(--fontTextoFotter);
+    padding: 0 15px;}
+.myCard {
+    background-color: transparent;
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;}
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;}
+.innerCard {
+    position: relative;
     width: 100%;
     height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;}
+.myCard:hover .innerCard {
+    transform: rotateY(180deg);}
+.frontSide,
+.backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: 1s ease-in-out;
-    -webkit-box-reflect: below 0
-    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));}
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;}
+.frontSide,
+.frontSide::before {
+    background-size: cover;}
+.backSide,
+.backSide::before {
+    background-image: var(--fundoBrancoRoxo);}
+.backSide {
+    transform: rotateY(180deg);}
+.frontSide::before,
+.backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;}
+.card1 .frontSide,
+.card1 .frontSide::before{
+    background-image: url(img/desilucao.png);}
+.card2 .frontSide,
+.card2 .frontSide::before{
+    background-image: url(img/liz.png);}
 
 .estrelaForja{
     background-color: var(--cinza);
@@ -485,7 +536,7 @@ html{
 #estilo .subLinha{
     margin: 0 0 25px;}
 .felipeLuz{
-    margin: 200px 0;
+    margin: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;}

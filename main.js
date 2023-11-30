@@ -298,21 +298,3 @@ btnFoto.addEventListener('click', () => {
 
 })
 
-// flip
-let contClick = 0;
-const cards = document.querySelectorAll('.card');
-
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        if(contClick === 0){
-            contClick++
-            card.style.transform = 'rotateY(0.5turn)'
-            
-        } else {
-            contClick = 0
-            card.style.transform = 'rotateY(0)'
-        }
-    });
-});
-
-
