@@ -6,8 +6,8 @@
     --StarGrandeAltura: 50px;
 
     --fontTitulo: 400 20px 'Opti-Regular', sans-serif;
-    --fontSubTitulo: 400 10px 'Decol-regular';
-    --fontTexto: 400 8px 'Opti-regular';
+    --fontSubTitulo: 400 12px 'Decol-regular';
+    --fontTexto: 400 10px 'Opti-regular';
 
     --fontTituloFooter: 400 30px 'Opti-Regular', sans-serif;
     --fontSubTituloFooter: 400 20px 'Decol-regular';
@@ -123,7 +123,8 @@
 #conteudo .texto{
     margin: 10px 0;}
 #conteudo .star,
-.sessao .star{
+.sessao .star,
+#btnCamera .star{
     height: 40px;
     margin: 10px 0 0 0;}
 .conteudoTexto{
@@ -134,7 +135,7 @@
 #firstStar{
     left: 0;}
 #BigRightStar{
-    margin-left: 40%;}
+    display: none;}
 .sessao{
     margin-top: 25px;} 
 #linhaLogoMaior{
@@ -145,6 +146,8 @@
 .estrelaForja{
     width: auto;
     height: 65vh;}
-
-
+#tituloCamera{
+    padding: 0 10px;}
+#camera{
+    width: 90%;}
     
