@@ -1,9 +1,9 @@
 :root {
     --StarPequeno: 15px;
     --StarPadrao: 20px;
-    --StarGrande: 70px;
+    --StarGrande: 40px;
 
-    --StarGrandeAltura: 80px;
+    --StarGrandeAltura: 50px;
 
     --fontTitulo: 400 20px 'Opti-Regular', sans-serif;
     --fontSubTitulo: 400 10px 'Decol-regular';
@@ -12,33 +12,25 @@
     --fontTituloFooter: 400 30px 'Opti-Regular', sans-serif;
     --fontSubTituloFooter: 400 20px 'Decol-regular';
     --fontTextoFotter: 400 15px 'Opti-regular';}
-
-
 .fundo {
     justify-content: center;
     align-items: center;
     background-image: url(img/Fundo.png);
     height: 100vh;
     background-position: bottom;}
-
 .linha1 {
     background: var(--roxo1);
     height: 65px;
     margin: 12px 0 0;}
-
 .linha2 {
     background: var(--roxo2);
     height: 51px;
     margin-top: 12px;}
-
-
-
 .lines {
     position: absolute;
     height: 100%;
     margin: 0;
     width: 90vw;}
-
 .starCarregar1{
     left: 120px;
     top: 198px;}
@@ -77,7 +69,10 @@
 .subLinha{
     width: 75vw;
     margin-top: 15px;}
-.conteudo{
+.conteudo,
+#nossaHistoria .conteudoImagem .conteudo,
+#personagens .texto,
+#personagens .subtexto{
     width: 80vw;}
 .forja{
     width: 95vw;}
@@ -95,10 +90,61 @@
     margin: 0 40px;}
 .linhaLogo{
     width: 10vw;}
+#personagens .divisaoLogo .linhaLogo{
+    width: 25vw;}
 #carrosselImagem{
-    height: 250px;
-}
+    height: 250px;}
+.legenda{
+    font-size: var(--fontTexto);}
+.carrossel{
+    height: auto;}
+.conteudo{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+#nossoTrabalho .titulo{
+    margin-bottom: 50px;}
+#nossoTrabalho .conteudo,
+#nossaHistoria .conteudo,
+#personagens .conteudo,
+.linhaTexto,
+.myCard{
+    margin: 50px 0;}
+#nossaHistoria .conteudoImagem{
+    flex-wrap: wrap;}
+.imagem{
+    width: 240px;}
+.starNone{
+    display: none;}
+#historiaStar{
+    height: 40px;
+    margin: 0;}
+#conteudo .texto{
+    margin: 10px 0;}
+#conteudo .star,
+.sessao .star{
+    height: 40px;
+    margin: 10px 0 0 0;}
+.conteudoTexto{
+    margin: 50px 0 0;}
+#personagens .divisaoLogo,
+#BigRightStar{
+    margin: 0;}
+#firstStar{
+    left: 0;}
+#BigRightStar{
+    margin-left: 40%;}
+.sessao{
+    margin-top: 25px;} 
+#linhaLogoMaior{
+    width: 50vw;}
+.cards{
+    flex-wrap: wrap;
+    margin: 0;}
+.estrelaForja{
+    width: auto;
+    height: 65vh;}
 
 
-
-
+    
