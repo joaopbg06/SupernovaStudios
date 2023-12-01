@@ -561,6 +561,7 @@ html{
     transition: all 1s linear;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 5px;}
 #tituloForjaTexto{
     transition: all 1s linear;}
