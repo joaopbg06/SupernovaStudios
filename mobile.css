@@ -161,6 +161,32 @@
     width: 240px;}
 .iconesDivulgacao .icon{
     width: 30px;}
+.descerScroll{
+    transform: translateY(-100px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.subirScroll{
+    transform: translateY(100px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.leftScroll{
+    transform: translatex(-25px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.rightScroll{
+    transform: translatex(25px);
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 2s;}
+.depoisScroll{
+    transform: translateY(0);
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;}
 
 
 
