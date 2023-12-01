@@ -881,12 +881,14 @@ html{
 .rapido{
     animation: infinite orbita 3s;}
 .starPequena{
-    width: var(--StarPequeno);}
+    width: var(--StarPequeno);
+    height: 40px;}
 .starGrande{
     width: var(--StarGrande);
     height: var(--StarGrandeAltura);}
 .star{
-    width: var(--StarPadrao);}
+    width: var(--StarPadrao);
+    height: 74px;}
 /* Scroll */
 .descerScroll{
     transform: translateY(-100px);
