@@ -12,6 +12,10 @@
     --fontTituloFooter: 400 20px 'Opti-Regular', sans-serif;
     --fontSubTituloFooter: 400 15px 'Decol-regular';
     --fontTextoFotter: 400 10px 'Opti-regular';}
+.star{
+    height: 30px;}
+.starPequeno{
+    height: 25px;}
 .linha1 {
     background: var(--roxo1);
     height: 65px;
