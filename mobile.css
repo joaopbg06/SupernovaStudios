@@ -1,6 +1,6 @@
 :root {
     --StarPequeno: 15px;
-    --StarPadrao: 30px;
+    --StarPadrao: 20px;
     --StarGrande: 70px;
 
     --StarGrandeAltura: 80px;
@@ -84,13 +84,20 @@
 .videoFerreiro{
     width: 75vw;}
 .video{
-    width: 70vw;
+    width: 70vw;}
+.saturno{
+    width: 100px;
+    height: auto;}  
+.logoMain{
+    height: 50px;
+    margin: 20px 0 40px;}
+.conteiner{
+    margin: 0 40px;}
+.linhaLogo{
+    width: 10vw;}
+#carrosselImagem{
+    height: 250px;
 }
-
-
-
-
-
 
 
 

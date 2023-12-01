@@ -280,8 +280,7 @@ html{
     width: 20vw;
     height: 1px;}
 #nossoTrabalho .titulo{
-    color: var(--branco);
-    font-size: 50px;}
+    color: var(--branco);}
 .carrossel{
     height: 700px;
     position: relative;}
