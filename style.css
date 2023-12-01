@@ -38,8 +38,7 @@ html{
     --fundoBrancoRoxo: linear-gradient(0deg, rgba(104, 42, 167, 0.65) -33.65%, rgba(255, 161, 246, 0.00) 138.46%);
     --fundoRoxo1: linear-gradient(0deg, rgba(162, 73, 147, 0.86) 86.4%, rgba(124, 42, 232, 0.74) 98.04%);
     --fundoRoxo2: linear-gradient(180deg, #A758A4 0%, #9E62EE 25.42%);
-    --corDivicao: linear-gradient(163deg, #AF62A2 -82.34%, #AF62A2 -8.41%, #A758A4 90.89%);
-}
+    --corDivicao: linear-gradient(163deg, #AF62A2 -82.34%, #AF62A2 -8.41%, #A758A4 90.89%);}
 @font-face {font-family: 'webcomic';
     src: url(font/Webcomic.ttf);}
 @font-face {font-family:'OsdMono' ;
@@ -331,7 +330,6 @@ html{
     width: 620px;
     height: 870px;}
 #nossaHistoria .conteudoImagem .conteudo{
-    width: 550px;
     color: var(--branco);}
 #nossaHistoria .imagem{
     display: flex;
@@ -343,7 +341,7 @@ html{
     margin: 350px 0 0 300px;}
 #nossaHistoria .conteudo{
     color: var(--branco);
-    margin: 200px 0;
+    margin: 200px 0 200px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;}
@@ -513,7 +511,6 @@ html{
 .card2 .frontSide,
 .card2 .frontSide::before{
     background-image: url(img/liz.png);}
-
 .estrelaForja{
     background-color: var(--cinza);
     width: 1000px;
