@@ -120,11 +120,14 @@
         document.getElementById('carregar').style.opacity = 0;
         document.getElementById('carregar').style.overflow = 'hidden'
         document.getElementById('carregar').style.cursor = 'default'
-        barraProgresso.style.display = 'block';
-        textoCarregamento.style.display = 'block';
-        divProgresso.style.display = 'block';
+        
+        setTimeout( () => {
+            barraProgresso.style.display = 'block';
+            textoCarregamento.style.display = 'block';
+            divProgresso.style.display = 'block';
 
-        iniciarContador();
+            iniciarContador();
+        }, 1000)
     }
 
 
