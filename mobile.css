@@ -109,7 +109,6 @@
 #nossoTrabalho .conteudo,
 #nossaHistoria .conteudo,
 #personagens .conteudo,
-.linhaTexto,
 .myCard{
     margin: 50px 0;}
 #nossaHistoria .conteudoImagem{
@@ -195,8 +194,11 @@
     transition: all 2s;}
 .starGrande{
     margin: 20px  0 10px;}
-
-
+.linhaTexto{
+    margin: 0;
+}
+#personagens .sessao .linhaTexto p{
+    margin: 10px 0 20px;}
 
 
 
