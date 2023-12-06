@@ -167,19 +167,19 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
-#main, #footer {
+/* #main, #footer {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 #header {
-    transition-delay: 0.1s;}
+    transition-delay: 0.1s;} */
 /*Adiciona um atraso para que o header apareça após a telaCarregamento}*/
-.hidden {
+/* .hidden {
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: opacity 1s ease-in-out, height 1s ease-in-out;}
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;} */
 .saturno{
     animation: infinite orbita 8s;
     height: 360px;}
@@ -348,9 +348,8 @@ html{
 #historiaStar{
     height: 80px;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 50px;} 
+    justify-content: right;
+    width: 100%;} 
 #conteudo .star{
     margin: 25px 0;}
 #nossaHistoria #conteudo{
@@ -360,6 +359,9 @@ html{
     height: 100px;}
 #conteudo .texto{
     margin: 30px 0;}
+.starNone{
+    margin-top: 20px;
+}
 /* Parte 4 */
 #personagens{
     background: var(--fundoRoxo1);
