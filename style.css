@@ -167,19 +167,19 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
-/* #main, #footer {
+#main, #footer {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 #header {
-    transition-delay: 0.1s;} */
+    transition-delay: 0.1s;}
 /*Adiciona um atraso para que o header apareça após a telaCarregamento}*/
-/* .hidden {
+.hidden {
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: opacity 1s ease-in-out, height 1s ease-in-out;} */
+    transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 .saturno{
     animation: infinite orbita 8s;
     height: 360px;}
