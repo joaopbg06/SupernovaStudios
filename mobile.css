@@ -48,6 +48,7 @@
     top: 600px;
     right: 200px;}
 
+.telaCarregamento
 #barraProgresso{
     width: 85vw;
     height: 20px;
@@ -195,12 +196,12 @@
 .starGrande{
     margin: 20px  0 10px;}
 .linhaTexto{
-    margin: 0;
-}
+    margin: 0;}
 #personagens .sessao .linhaTexto p{
     margin: 10px 0 20px;}
-
-
+.textoLogo{
+    width: 100px;
+}
 
 
 
