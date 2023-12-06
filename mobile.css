@@ -88,7 +88,9 @@
 .conteiner{
     margin: 0 40px;}
 .linhaLogo{
-    width: 10vw;}
+    width: 10vw;
+    height: 0.1px;
+    border: 0.1px var(--branco) solid}
 #personagens .divisaoLogo .linhaLogo{
     width: 25vw;}
 #carrosselImagem{

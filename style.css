@@ -348,7 +348,7 @@ html{
 #historiaStar{
     height: 80px;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     width: 100%;} 
 #conteudo .star{
     margin: 25px 0;}
@@ -360,8 +360,7 @@ html{
 #conteudo .texto{
     margin: 30px 0;}
 .starNone{
-    margin-top: 20px;
-}
+    margin-top: 20px;}
 /* Parte 4 */
 #personagens{
     background: var(--fundoRoxo1);
