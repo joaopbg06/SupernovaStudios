@@ -7,7 +7,8 @@ a{
     text-decoration: none;}
 img{
     width: 100%;
-    height: auto;}
+    height: auto;
+    border-radius: 15px;}
 html{
     scroll-behavior: smooth;}
 /* reset */
@@ -36,9 +37,11 @@ html{
     --preto: #000;
 
     --fundoBrancoRoxo: linear-gradient(0deg, rgba(104, 42, 167, 0.65) -33.65%, rgba(255, 161, 246, 0.00) 138.46%);
-    --fundoRoxo1: linear-gradient(0deg, rgba(162, 73, 147, 0.86) 86.4%, rgba(124, 42, 232, 0.74) 98.04%);
-    --fundoRoxo2: linear-gradient(180deg, #A758A4 0%, #9E62EE 25.42%);
-    --corDivicao: linear-gradient(163deg, #AF62A2 -82.34%, #AF62A2 -8.41%, #A758A4 90.89%);}
+    --fundoRoxo1: linear-gradient(337deg, rgba(72, 32, 99, 0.97) 9.97%, rgba(87, 39, 98, 0.97) 73.66%);
+    --fundoRoxo2: linear-gradient(180deg, #4E2767 10.33%, #7E468C 47.1%, #4E2767 88.73%);
+    --fundoRoxo3: linear-gradient(180deg, #4E2767 0%, #460C53 38.27%, #663679 76.53%);;
+    --fundoRoxo4: linear-gradient(180deg, #4E2767 0%, #460D54 19.8%, #663679 39.59%, #460D54 59.39%, #4D2566 98.99%);
+    --corDivicao: linear-gradient(180deg, #663679 0%, #481257 100%);}
 @font-face {font-family: 'webcomic';
     src: url(font/Webcomic.ttf);}
 @font-face {font-family:'OsdMono' ;
@@ -53,6 +56,12 @@ html{
     src: url(font/Kaisei_Opti/KaiseiOpti-Regular.ttf);}
 @font-face {font-family: 'Decol-Regular' ;
     src: url(font/Kaisei_Decol/KaiseiDecol-Regular.ttf);}
+@font-face {font-family: 'cream';
+    src: url(font/Cream\ Bread.otf);}
+@font-face {font-family: 'write';
+    src: url(font/Please\ write\ me\ a\ song.ttf);}
+@font-face {font-family: 'rosie';
+    src: url(font/Rosie\ Brown\ Serif\ Demo.otf);}
 /* Animação */
 @keyframes animate {
     0% {
@@ -90,7 +99,7 @@ html{
     font-family: 'webcomic';
     }
     30% {
-    font-family: monospace;
+    font-family: 'rosie';
     }
     40% {
     font-family: 'OsdMono';
@@ -99,7 +108,7 @@ html{
     font-family: Tahoma;
     }
     60% {
-    font-family: impact;
+    font-family: 'rosie';
     }
     70% {
     font-family: 'gameboy';
@@ -111,7 +120,7 @@ html{
     font-family: 'atWriter';
     }
     99% {
-    font-family: 'analogist';
+    font-family: 'rosie';
     }
     100% {
     font-family: 'analogist';
@@ -132,24 +141,17 @@ html{
     transition-delay: 1s;
     text-align: center;
     height: 100px;
-    margin-bottom: 100px;
     color: var(--branco);
-    font-size: 50px;}
-.logo{
-    width: 18.75rem;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    /* animation: infinite orbita 2s;} */}
+    font-size: 50px;
+    font-family: 'rosie';}
 .fundo{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(img/Fundo.png);
+    background-image: url(img/fundoEstrela.png);
     height: 100vh;
-    background-position:bottom;}
+    background-position: 50% 90%;}
 #LeftStar{
     position: absolute;
     top: 50px;
@@ -167,19 +169,21 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
-#main, #footer {
+/* #main, #footer {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 #header {
-    transition-delay: 0.1s;}
+    transition-delay: 0.1s;} */
 /*Adiciona um atraso para que o header apareça após a telaCarregamento}*/
-.hidden {
+/* .hidden {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
+body{
+    background-color: var(--preto);} */
 .saturno{
     animation: infinite orbita 8s;
     height: 360px;}
@@ -284,8 +288,18 @@ html{
     height: 700px;
     position: relative;}
 #carrosselImagem{
-    transition: 0.5s;
-    height: 700px}
+    transition: 0.5s opacity;
+    background-image: url(img/imagem1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;}
+.carrosselImagem{
+    width: 50vw;
+    height: 85vh;
+    filter: drop-shadow( 0 0 15px var(--preto));}
 .bolinha {
     width: 13px;
     height: 13px;
@@ -363,7 +377,7 @@ html{
     margin-top: 20px;}
 /* Parte 4 */
 #personagens{
-    background: var(--fundoRoxo1);
+    background: var(--fundoRoxo4);
     color: var(--branco);}
 #personagens .prototipo{
     width: 620px;
@@ -398,7 +412,6 @@ html{
     margin-left: 55%;
     margin-top: 100px;}
 .sessao{
-    background: var(--fundoRoxo2);
     width: 99vw;
     margin-top: 100px;}
 .sessao .star{
@@ -438,8 +451,11 @@ html{
     background-color: var(--branco);}
 .sessao .tituloLogo{
     width: 85%;
-    padding-bottom: 15px;}
+    padding-bottom: 50px;}
 /* Parte 5 */
+#estilo{
+    background: var(--fundoRoxo3);
+    color: var(--branco);}
 .cards{
     display: flex;
     justify-content: space-around;
@@ -513,14 +529,15 @@ html{
 .card2 .frontSide::before{
     background-image: url(img/liz.png);}
 .estrelaForja{
-    background-color: var(--cinza);
+    background: linear-gradient(0deg, #663679 -39.36%, #470D54 100%);;
     width: 1000px;
     height: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: var(--branco);}
+    color: var(--branco);
+    border-radius: 15px;}
 .btnCamera{
     background-color: transparent;
     cursor: pointer;
@@ -534,7 +551,8 @@ html{
     width: 100%;
     height: 90%;}
 #estilo .subLinha{
-    margin: 0 0 25px;}
+    margin: 0 0 25px;
+    border-color: var(--branco);}
 .felipeLuz{
     margin: 50px 0;
     display: flex;
@@ -570,16 +588,18 @@ html{
     color: var(--branco);
     position: relative;}
 .divInicial{
-    background: var(--fundoBrancoRoxo);
+    background: var(--corDivicao);
     width: 100%;
     height: 50px;
     margin-bottom: 5px;}
 .divFinal{
-    background-color: var(--roxoEscuro);
+    background:  var(--corDivicao);
     width: 100%;
     height: 50px;}
 #footer .fundo{
-    background-position: 50% 20%;}
+    background-position: 50% 20%;
+    flex-direction: row;
+    background-image: url(img/fundoEstrela.png);}
 #footer .conteiner{
     flex-direction: row;
     justify-content: space-between;
@@ -765,6 +785,7 @@ html{
     fill: #FFFDEF}
 .telaCarregamento{
     height: 100vh;
+    width: 100%;
     background-color: var(--preto);
     display: flex;
     flex-direction: column;
@@ -866,18 +887,19 @@ html{
     transition: opacity  1s ease-in;}
 /* Barra de rolagem */
 ::-webkit-scrollbar {
-    width: 10px;}
+    width: 12px;}
 ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
     background-color: var(--amarelo);}
 ::-webkit-scrollbar-track {
-    background-color: var(--roxoDiferente);}
+    background-color: #460C53;}
 /* Velocidade star */
 .lento{
     animation: 10s orbita infinite;}
 .medio{
     animation: infinite orbita 5s;}
 .rapido{
-    animation: infinite orbita 3s;}
+    animation: infinite orbita 3s ;}
 .starPequena{
     width: var(--StarPequeno);
     height: 40px;}

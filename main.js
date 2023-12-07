@@ -113,6 +113,9 @@
             header.style.transform = "translateY(0)"; // Move para a posição inicial (acima da viewport)
         }, 100); // Ajuste conforme necessário
 
+        setTimeout(function() {
+            document.body.style.backgroundColor = "#fff"
+        }, 2500)
 
     }
 
@@ -154,7 +157,7 @@
         bolinhas[imgIndice].classList.add('ativa'); // Ativa a bolinha correspondente
 
         setTimeout(() => {
-            IMG.src = IMAGENS[imgIndice];
+            IMG.style.backgroundImage = `url(${IMAGENS[imgIndice]})`;
             IMG.style.opacity = 1; // Conclui a transição (fade-in)
         }, 500); // Tempo de espera para a transição
     }
@@ -330,6 +333,7 @@ function checkScreenSize() {
     }
 };
 
+// scroll horizontal 
 
 
 

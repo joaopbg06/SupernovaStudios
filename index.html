@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/Star.svg">
+    <link rel="stylesheet" href="tablet.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:425px)">
 
     <title>Supernova Studios</title>
@@ -47,12 +48,12 @@
             </div>
         </button>
 
-        <div class="starPequena starCarregar1 lento leftScroll"><img src="img/Star.svg" alt=""></div>
-        <div class="starPequena starCarregar2 rapido rightScroll"><img src="img/Star.svg" alt=""></div>
-        <div class="starPequena starCarregar3 lento rightScroll"><img src="img/Star.svg" alt=""></div>
-        <div class="starPequena starCarregar4 rapido leftScroll"><img src="img/Star.svg" alt=""></div>
-        <div class="starPequena starCarregar5 medio rightScroll"><img src="img/Star.svg" alt=""></div>
-        <div class="starPequena starCarregar6 medio rightScroll"><img src="img/Star.svg" alt=""></div>
+        <div class="starPequena starCarregar1 lento leftScroll"><img src="img/star (2).png" alt=""></div>
+        <div class="starPequena starCarregar2 rapido rightScroll"><img src="img/star (2).png" alt=""></div>
+        <div class="starPequena starCarregar3 lento rightScroll"><img src="img/star (2).png" alt=""></div>
+        <div class="starPequena starCarregar4 rapido leftScroll"><img src="img/star (2).png" alt=""></div>
+        <div class="starPequena starCarregar5 medio rightScroll"><img src="img/star (2).png" alt=""></div>
+        <div class="starPequena starCarregar6 medio rightScroll"><img src="img/star (2).png" alt=""></div>
 
 
         <span class="textoCarregamento"></span>
@@ -70,19 +71,14 @@
     <header id="header" class="hidden">
         <div class="fundo subirScroll">
 
-            <div id="LeftStar" class="estrelaEsquerda star rapido leftScroll">
-                <img src="img/Star.svg" >
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
 
             <div class="logo subirScroll">
-                <div class="planeta subirScroll">
-                    <img src="img/Saturno.png" alt="">
-                </div>
                 <h1 class="texto-logo">Supernova Studios</h1>
-            </div>
-            
-            <div id="RightStar" class="estrelaDireita star lento rightScroll">
-                <img src="img/Star.svg" >
             </div>
 
         </div>
@@ -119,7 +115,11 @@
                     <p class="texto">Lorem ipsum dolor sit amet consectetur. Montes elementum venenatis dictum suspendisse turpis semper. Porttitor et in in nulla nibh aliquam volutpat accumsan nunc. Luctus sed consectetur ullamcorper urna ipsum nibh. Pellentesque pellentesque aliquet maecenas ut risus elementum mauris morbi eget.</p>
                 </div>
             </div>
-        </section>
+        </section> 
+
+        <div class="satelite">
+            <i class="fa-solid fa-satellite"></i>
+        </div>
 
         <!-- Parte 2 -->
         <section class="section" id="nossoTrabalho">
@@ -151,11 +151,9 @@
 
                     <div  class="carrossel subirScroll">
 
-                        <div class="legenda">
-                            <p>Esboços</p>
+                        <div class="carrosselImagem">
+                            <div id="carrosselImagem"></div>
                         </div>
-
-                        <img id="carrosselImagem" src="img/imagem1.png" alt="">
 
                         <div id="progressoCarrossel">
 
@@ -470,7 +468,7 @@
 
     <!-- footer -->
     <footer id="footer" class="hidden">
-        <div class="divInicial descerScroll"></div>
+        <div class="divInicial subirScroll"></div>
         <div class="divFinal subirScroll"></div>
 
         <div class="fundo ">

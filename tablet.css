@@ -1,0 +1,75 @@
+.starCarregar3{
+    position: absolute;
+    right: 430px;
+    top: 5%;}
+.starCarregar4{
+    position: absolute;
+    left: 450px;
+    top: 80%;}
+:root {
+    --StarPequeno: 20px;
+    --StarPadrao: 30px;
+    --StarGrande: 40px;
+
+    --StarGrandeAltura: 50px;
+
+    --fontTitulo: 400 25px 'Opti-Regular', sans-serif;
+    --fontSubTitulo: 400 15px 'Decol-regular';
+    --fontTexto: 400 13px 'Opti-regular';
+
+    --fontTituloFooter: 400 20px 'Opti-Regular', sans-serif;
+    --fontSubTituloFooter: 400 15px 'Decol-regular';
+    --fontTextoFotter: 400 10px 'Opti-regular';}
+.conteudo,
+#personagens .conteudo{
+    width: 80%;}
+.conteudoTexto{
+    width: 65%;}
+.conteiner,
+.logoMain,
+.conteudoTexto{
+    margin: 0 75px;}
+.saturno{
+    width: 150px;
+    height: auto;}
+.logoMain{
+    height: 100px;}
+.starPequena{
+    width: var(--StarPequeno);
+    height: 30px;}
+.starGrande{
+    width: var(--StarGrande);
+    height: var(--StarGrandeAltura);}
+.star,
+#conteudo .star{
+    width: var(--StarPadrao);
+    height: 40px;}
+#nossoTrabalho .titulo,
+#nossoTrabalho .conteudo,
+#nossaHistoria .conteudo,
+#historiaStar,
+#personagens .divisaoLogo,
+#personagens .conteudo,
+.sessao{
+    margin: 50px 0;}
+#carrosselImagem{
+    height: 500px;}
+.carrossel,
+#historiaStar{
+    height: auto;}
+#nossaHistoria .conteudo{
+    margin-left: 50px;}
+#conteudo .texto{
+    margin: 7px 0;}
+#personagens .texto, #personagens .subtexto{
+    width: auto;}
+#firstStar{
+    left: -10%;}
+.sessao{
+    width: 100vw;}
+#BigRightStar{
+    margin-top: 15px;}
+
+
+
+
