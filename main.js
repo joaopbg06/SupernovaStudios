@@ -275,7 +275,6 @@
         setTimeout(() =>{
             btnFoto.style.opacity = 1;
             camera.style.opacity = 1;
-            tituloForja.style.opacity = 1;
         }, 2000)
 
         abrirCamera()
@@ -294,7 +293,6 @@
         btnFoto.style.opacity = 0;
         tituloForja.style.opacity = 0;
 
-        tituloForjaTexto.textContent = 'ESTRELA FORJADA'
 
         setTimeout(() =>{
             foto.style.opacity = 1;
@@ -333,7 +331,19 @@ function checkScreenSize() {
     }
 };
 
-// scroll horizontal 
+// json
 
+function escolher(idioma){
+    fetch(`textos_${idioma}.json`)
+        .then(resposta => resposta.json())
+        .then(texto => {
 
+            for (let i = 1; i < 40; i++){
+                document.querySelector(`.texto${i}`).textContent = texto[`titulo${i}`]
+            }
+
+        })
+        .catch(error => console.error('Erro buscando textos: ', error));
+}
+escolher('ptbr')
 

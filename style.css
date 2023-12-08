@@ -133,6 +133,14 @@ html{
     50%{
         padding-top: 10px;
     }}
+@keyframes orbitaPequena {
+    0%{
+        padding-top: 0;
+    }
+
+    50%{
+        padding-top: 5px;
+    }}
 /* header */
 #header .planeta{
     animation: infinite orbita 8s;
@@ -273,8 +281,7 @@ body{
     border: 1.2px var(--preto) solid;
     margin: 30px 0 0;}
 #forja .conteiner{
-    justify-content: space-around;
-    height: 150vh;}
+    justify-content: space-around;}
 /* Parte 2 */
 #nossoTrabalho{
     background: var(--fundoRoxo1);}
@@ -329,7 +336,7 @@ body{
     color: var(--branco);}
 #nossoTrabalho .conteudo{
     color: var(--branco);
-    margin: 300px 0;}
+    margin: 100px 0;}
 #nossoTrabalho .titulo{
     margin-bottom: 150px;}
 /* Parte 3 */
@@ -370,7 +377,7 @@ body{
     width: 85vw;
     margin: 0;}
 #conteudo .star{
-    height: 100px;}
+    filter: drop-shadow(0 0 10px var(--branco));}
 #conteudo .texto{
     margin: 30px 0;}
 .starNone{
@@ -415,7 +422,6 @@ body{
     width: 99vw;
     margin-top: 100px;}
 .sessao .star{
-    height: 80px;
     margin-right: 75%;
     margin-top: 50px}
 .sessao .conteudo{
@@ -467,8 +473,8 @@ body{
     padding: 0 15px;}
 .myCard {
     background-color: transparent;
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
     perspective: 1000px;}
 .title {
     font-size: 1.5em;
@@ -599,7 +605,8 @@ body{
 #footer .fundo{
     background-position: 50% 20%;
     flex-direction: row;
-    background-image: url(img/fundoEstrela.png);}
+    background-image: url(img/fundoEstrela.png);
+    height: auto;}
 #footer .conteiner{
     flex-direction: row;
     justify-content: space-between;
@@ -666,7 +673,7 @@ body{
 .btnCarregar {
     position: relative;
     padding: 12px 35px;
-    background: var(--roxoDiferente);
+    background: #460C53;
     color: var(--branco);
     border: 3px solid var(--preto);
     border-radius: 8px;
@@ -900,50 +907,64 @@ body{
     animation: infinite orbita 5s;}
 .rapido{
     animation: infinite orbita 3s ;}
-.starPequena{
-    width: var(--StarPequeno);
-    height: 40px;}
-.starGrande{
-    width: var(--StarGrande);
-    height: var(--StarGrandeAltura);}
 .star{
-    width: var(--StarPadrao);
-    height: 74px;}
+    height: 30px;}
 /* Scroll */
 .descerScroll{
     transform: translateY(-100px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .subirScroll{
     transform: translateY(100px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .leftScroll{
     transform: translatex(-50px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .rightScroll{
     transform: translatex(50px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .depoisScroll{
     transform: translateY(0);
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-    transition: all 2s;}
+    transition: all 1s;}
+/* coisinhas */
+.section{
+    position: relative;}
 
-
-
-
-
-
-
-
-
-
-
+.satelite,
+.antena{
+    color: var(--branco);
+    position: absolute;}
+.satelite,
+.antena,
+.star{
+    filter: drop-shadow(0 0 10px var(--branco));}
+/* parte2 */
+.local1{
+    top: 14%;
+    left: 12%;}
+.local2{
+    top: 35%;
+    right: 9%;}
+.local3{
+    top: 83%;
+    left: 12%;}
+.local4{
+    top: 70%;
+    right: 6%}
+/* parte3 */
+.local5{
+    right: 18%;
+    top: 13%;}
+.local6{
+    left: 21%;
+    top: 53%;}

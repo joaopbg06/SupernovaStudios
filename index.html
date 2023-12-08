@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/Star.svg">
     <link rel="stylesheet" href="tablet.css" media="screen and (max-width:768px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:425px)">
+    <link rel="icon" href="img/Star.svg">
 
     <title>Supernova Studios</title>
 
@@ -27,7 +27,8 @@
 
         
 
-        <button id="carregar" class="btnCarregar">Clique aqui
+        <button id="carregar" class="btnCarregar">
+            <span class="texto1"></span>
             <div class="star-1">
             <svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 784.11 815.53" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs></defs><g id="Layer_x0020_1"><metadata id="CorelCorpID_0Corel-Layer"></metadata><path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z" class="fil0"></path></g></svg>
             </div>
@@ -48,12 +49,24 @@
             </div>
         </button>
 
-        <div class="starPequena starCarregar1 lento leftScroll"><img src="img/star (2).png" alt=""></div>
-        <div class="starPequena starCarregar2 rapido rightScroll"><img src="img/star (2).png" alt=""></div>
-        <div class="starPequena starCarregar3 lento rightScroll"><img src="img/star (2).png" alt=""></div>
-        <div class="starPequena starCarregar4 rapido leftScroll"><img src="img/star (2).png" alt=""></div>
-        <div class="starPequena starCarregar5 medio rightScroll"><img src="img/star (2).png" alt=""></div>
-        <div class="starPequena starCarregar6 medio rightScroll"><img src="img/star (2).png" alt=""></div>
+        <div class="star starCarregar1 lento leftScroll">
+            <i class="fa-solid fa-rotate-270 fa-meteor fa-xl" style="color: #ffffff;"></i>
+        </div>
+        <div class="star starCarregar2 rapido rightScroll">
+            <i class="fa-solid fa-star fa-xl" style="color: #ffffff;"></i>
+        </div>
+        <div class="star starCarregar3 lento rightScroll">
+            <i class="fa-solid fa-moon fa-lg" style="color: #ffffff;"></i>
+        </div>
+        <div class="star starCarregar4 rapido leftScroll">
+            <i class="fa-solid fa-star fa-xl" style="color: #ffffff;"></i>
+        </div>
+        <div class="star starCarregar5 medio rightScroll">
+            <i class="fa-solid fa-satellite fa-xl" style="color: #ffffff;"></i>
+        </div>
+        <div class="star starCarregar6 medio rightScroll">
+            <i class="fa-solid fa-star fa-xl" style="color: #ffffff;"></i>
+        </div>
 
 
         <span class="textoCarregamento"></span>
@@ -78,7 +91,7 @@
             </div>
 
             <div class="logo subirScroll">
-                <h1 class="texto-logo">Supernova Studios</h1>
+                <h1 class="texto-logo texto2"></h1>
             </div>
 
         </div>
@@ -97,9 +110,9 @@
             <div class="conteiner">
     
                 <div class="titulo forja descerScroll">
-                    <h2>Entrando na forja da </h2>
+                    <h2 class="texto3"></h2>
                         <div class="subLinha"></div>
-                    <h2>criação</h2>
+                    <h2 class="texto4"></h2>
                 </div>
 
                 
@@ -111,15 +124,12 @@
                 </div>
     
                 <div class="conteudo descerScroll">
-                    <h3 class="subTitulo">Quem somos nós?</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur. Montes elementum venenatis dictum suspendisse turpis semper. Porttitor et in in nulla nibh aliquam volutpat accumsan nunc. Luctus sed consectetur ullamcorper urna ipsum nibh. Pellentesque pellentesque aliquet maecenas ut risus elementum mauris morbi eget.</p>
+                    <h3 class="subTitulo texto5"></h3>
+                    <p class="texto texto6"></p>
                 </div>
             </div>
         </section> 
 
-        <div class="satelite">
-            <i class="fa-solid fa-satellite"></i>
-        </div>
 
         <!-- Parte 2 -->
         <section class="section" id="nossoTrabalho">
@@ -128,7 +138,7 @@
                 <div class="logoMain subirScroll">
 
                     <div class="star rapido leftScroll ">
-                        <img src="img/Star.svg" alt="">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
 
                     <div class="linhaLogo"></div>
@@ -140,14 +150,14 @@
                     <div class="linhaLogo"></div>
 
                     <div class="star medio rightScroll">
-                        <img src="img/Star.svg" alt="">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
 
                 </div>
 
                 <div class="sketches">
 
-                    <h2 class="titulo subirScroll" >Conheça nossas estrelas</h2>
+                    <h2 class="titulo subirScroll texto7" ></h2>
 
                     <div  class="carrossel subirScroll">
 
@@ -180,10 +190,23 @@
                 </div>
 
                 <div class="conteudo subirScroll">
-                    <h3 class="subTitulo">Com o que trabalhamos?</h3>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur. Montes elementum venenatis dictum suspendisse turpis semper. Porttitor et in in nulla nibh aliquam volutpat accumsan nunc. Luctus sed consectetur ullamcorper urna ipsum nibh. Pellentesque pellentesque aliquet maecenas ut risus elementum mauris morbi eget.</p>
+                    <h3 class="subTitulo texto8"></h3>
+                    <p class="texto texto9"></p>
                 </div>
 
+            </div>
+
+            <div class="satelite local1 subirScroll">
+                <i class="leftScroll fa-solid fa-satellite fa-rotate-270 fa-xl"></i>
+            </div>
+            <div class="antena local2 subirScroll">
+                <i class="rightScroll fa-solid fa-satellite-dish fa-rotate-270 fa-lg"></i>
+            </div>
+            <div class="antena local3 subirScroll">
+                <i class="rightScroll fa-solid fa-satellite-dish fa-lg"></i>
+            </div>
+            <div class="satelite local4 subirScroll">
+                <i class="rightScroll fa-solid fa-satellite fa-rotate-270 fa-xl"></i>
             </div>
         </section>
 
@@ -194,17 +217,17 @@
                 <div class="tituloLogo subirScroll">
 
                     <div class="star lento leftScroll">
-                        <img src="img/Star.svg" alt="">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
 
                     <div class="linhaLogo"></div>
 
-                    <h2 class="textoLogo">Conheça nossa história</h2>
+                    <h2 class="textoLogo texto10"></h2>
 
                     <div class="linhaLogo"></div>
                     
                     <div class="star medio rightScroll">
-                        <img src="img/Star.svg" alt="">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
 
 
@@ -220,8 +243,8 @@
                     </div>
 
                     <div class="conteudo rightScroll">
-                        <h3 class="subTitulo">Começo de um futuro</h3>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur. Montes elementum venenatis dictum suspendisse turpis semper. Porttitor et in in nulla nibh aliquam volutpat accumsan nunc. Luctus sed consectetur ullamcorper urna ipsum nibh. Pellentesque pellentesque aliquet maecenas ut risus elementum mauris morbi eget.</p>
+                        <h3 class="subTitulo texto11"></h3>
+                        <p class="texto texto12"></p>
                     </div>
 
 
@@ -230,10 +253,10 @@
 
                 <div id="historiaStar">
                     <div class="star lento leftScroll" >
-                        <img src="img/Star.svg">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
                     <div class="star rapido rightScroll" >
-                        <img src="img/Star.svg">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
                 </div>
                 
@@ -241,38 +264,44 @@
 
                 <div id="conteudo" class="conteudo subirScroll">
 
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat adipisci dolorem in, nisi ipsa hic ducimus, recusandae vero explicabo repellendus maiores repudiandae? Accusantium placeat aspernatur ipsa voluptate, perspiciatis laboriosam! Itaque.</p>
-                    <p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dicta asperiores explicabo recusandae sed modi perspiciatis quo hic ipsum aliquam rem non repellendus, qui maxime magni a odio officiis iure.</p>
-                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perferendis neque veniam, laudantium dolore voluptatem atque aspernatur provident eius explicabo, totam qui saepe quas animi id amet repellendus quaerat. Recusandae!</p>
+                    <p class="texto texto13"></p>
+                    <p class="texto texto14"></p>
+                    <p class="texto texto15"></p>
                     
                     <div class="star medio subirScroll">
-                        <img src="img/Star.svg" >
-                    </div>
-                </div>
-
+            <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>               </div>
                 </div>
 
             </div>
+
+            <div class="satelite local5 subirScroll">
+                <i class="rightScroll fa-solid fa-satellite fa-rotate-270 fa-xl"></i>
+            </div>
+
+            <div class="antena local6 subirScroll">
+                <i class="rightScroll fa-solid fa-satellite-dish fa-lg"></i>
+            </div>
+            
         </section>
 
         <!-- Parte 4 -->
-        <section id="personagens">
+        <section class="section" id="personagens">
             <div class="conteiner">
 
                 <div class="tituloLogo subirScroll">
 
                     <div class="star medio">
-                        <img src="img/Star.svg" alt="">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
     
                     <div class="linhaLogo"></div>
     
-                    <h2 class="textoLogo">Conheça nossos personagens</h2>
+                    <h2 class="textoLogo texto16"></h2>
     
                     <div class="linhaLogo"></div>
                     
                     <div class="star lento">
-                        <img src="img/Star.svg" alt="">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
     
     
@@ -285,12 +314,12 @@
 
                     <div class="conteudoTexto rightScroll">
                         
-                        <h2 class="titulo">FULANO:</h2>
-                        <h3 class="miniTitulo">HISTORIA:</h3>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, maxime quidem sed blanditiis at eaque optio ad veniam, aliquid voluptatum placeat ipsum voluptatem mollitia dolore vero corrupti nisi dicta aliquam?</p>
+                        <h2 class="titulo texto17"></h2>
+                        <h3 class="miniTitulo texto18"></h3>
+                        <p class="texto texto19"></p>
 
-                        <div class="starGrande lento rightScroll">
-                            <img src="img/Star.svg" alt="">
+                        <div class="star lento rightScroll">
+                            <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                         </div>
                     </div>
                 </div>
@@ -300,7 +329,7 @@
                     <div class="linhaLogo"></div>
     
                     <div class="star medio subirScroll">
-                        <img src="img/Star.svg" alt="">
+                        <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                     </div>
     
                     <div class="linhaLogo"></div>
@@ -315,27 +344,27 @@
 
                     <div class="conteudoTexto leftScroll">
 
-                        <div id="firstStar" class="starPequena rapido leftScroll"><img src="img/Star.svg"></div>
+                        <div id="firstStar" class="star rapido leftScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
                         
-                        <h2 class="titulo">CICLANO:</h2>
+                        <h2 class="titulo texto20"></h2>
 
-                        <div class="starGrande lento leftScroll">
-                            <img src="img/Star.svg" alt="">
+                        <div class="star lento leftScroll">
+                            <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                         </div>
 
-                        <h3 class="miniTitulo">HISTORIA:</h3>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, maxime quidem sed blanditiis at eaque optio ad veniam, aliquid voluptatum placeat ipsum voluptatem mollitia dolore vero corrupti nisi dicta aliquam?</p>
+                        <h3 class="miniTitulo texto21"></h3>
+                        <p class="texto texto22"></p>
 
-                        <div id="lastStar" class="starPequena medio leftScroll"><img src="img/Star.svg"></div>
+                        <div id="lastStar" class="star medio leftScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
                         
                     </div>
                 </div>
 
-                <div id="BigRightStar" class="starGrande lento rightScroll"><img src="img/Star.svg"></div>
+                <div id="BigRightStar" class="star lento rightScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
 
                 <div class="sessao">
 
-                    <div class="star medio leftScroll"><img src="img/Star.svg" alt=""></div>
+                    <div class="star medio leftScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
 
                     <div class="conteudo subirScroll">
 
@@ -346,15 +375,15 @@
 
                         <div class="conteudoTexto subirScroll">
 
-                            <h2 class="subTitulo">Lorem:</h2>
-                            <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur molestiae saepe, repellendus quis quam tempore. Maiores doloribus sed ullam modi, ea nulla atque exercitationem sit repudiandae, magni doloremque fugiat nam.</p>
-                            <p class="subtexto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore voluptatem cum atque rerum voluptatum eos error ipsa tempora, adipisci, beatae accusamus suscipit? Id facilis hic inventore nostrum! Quasi, hic assumenda?</p>
+                            <h2 class="subTitulo texto23"></h2>
+                            <p class="texto texto24"></p>
+                            <p class="subtexto texto25"></p>
                             
                             <div class="divisaoTextoEstrela subirScroll">
 
-                                <div class="star medio leftScroll"><img src="img/Star.svg" alt=""></div>
+                                <div class="star medio leftScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
                                 <div id="linhaLogoMaior" class="linhaLogo leftScroll"></div>
-                                <div class="star medio leftScroll"><img src="img/Star.svg" alt=""></div>
+                                <div class="star medio leftScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
 
                             </div>
 
@@ -364,24 +393,24 @@
 
                     <div class="linhaTexto subirScroll">
                         <div class="linhaTopTexto subirScroll"></div>
-                        <p class="texto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea laborum quia atque rem, ipsa voluptatum magnam exercitationem eos expedita, cum consectetur ullam debitis ex? Cumque dignissimos optio incidunt quisquam vitae.</p>
+                        <p class="texto texto26"></p>
                         <div class="linhaBottomTexto subirScroll"></div>
                     </div>
         <!-- Parte 5 -->
                     <div class="tituloLogo subirScroll">
 
                         <div class="star rapido leftScroll">
-                            <img src="img/Star.svg" alt="">
+                            <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                         </div>
         
                         <div class="linhaLogo"></div>
         
-                        <h2 class="textoLogo subirScroll">Estilos de arte e animação</h2>
+                        <h2 class="textoLogo subirScroll texto27"></h2>
         
                         <div class="linhaLogo"></div>
                         
                         <div class="star lento rightScroll">
-                            <img src="img/Star.svg" alt="">
+                            <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                         </div>
         
         
@@ -394,8 +423,7 @@
 
         
         <!-- Parte 5 -->
-        <section id="estilo">
-
+        <section class="section" id="estilo">
             <div class="conteiner">
 
                 <div class="cards descerScroll">
@@ -406,8 +434,8 @@
                                 
                             </div>
                             <div class="backSide">
-                                <p class="title">Sobre:</p>
-                                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, blanditiis at. Incidunt amet facilis, laboriosam eos aut nam suscipit optio eveniet quasi cupiditate. Dolorem, accusamus temporibus. Sint facilis mollitia deserunt!</p>
+                                <p class="title texto28"></p>
+                                <p class="texto texto29"></p>
                             </div>
                         </div>
                     </div>
@@ -418,8 +446,8 @@
                             
                             </div>
                             <div class="backSide">
-                                <p class="title">Sobre:</p>
-                                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, blanditiis at. Incidunt amet facilis, laboriosam eos aut nam suscipit optio eveniet quasi cupiditate. Dolorem, accusamus temporibus. Sint facilis mollitia deserunt!</p>
+                                <p class="title texto30"></p>
+                                <p class="texto texto31"></p>
                             </div>
                         </div>
                     </div>
@@ -431,16 +459,16 @@
                 <div class="felipeLuz subirScroll">
 
                     <div id="tituloForja" class="conteudoTitulo subirScroll">
-                        <h1 id="tituloForjaTexto" class="titulo">ESTRELA SENDO FORJADA</h1>
+                        <h1 id="tituloForjaTexto" class="titulo texto32"></h1>
                         <div class="subLinha"></div>
                     </div>
 
                     <div class="estrelaForja subirScroll">
-                        <h1 id="tituloCamera" class="titulo">ESTRELA EM FORJA</h1>
+                        <h1 id="tituloCamera" class="titulo texto33"></h1>
 
                         <button id="btnCamera"  class="btnCamera">
                             <div class="star subirScroll lento">
-                                <img src="img/Star.svg" alt="">
+                                <i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i>
                             </div>
                         </button>
 
@@ -461,7 +489,6 @@
                 
 
             </div>
-
         </section>
 
     </main>
@@ -478,7 +505,7 @@
 
                     <div class="patrocinadores leftScroll">
 
-                        <h1 class="titulo">Patrocinadores:</h1>
+                        <h1 class="titulo texto34"></h1>
 
                         <div class="icones iconesTop subirScroll">
                             <div class="icon"><a href="#"><img src="img/disney.svg" alt=""></a></div>
@@ -487,9 +514,9 @@
 
                         <div class="divisaoEstrelas leftScroll">
 
-                            <div class="starPequena lento leftScroll"><img src="img/Star.svg" alt=""></div>
+                            <div class="star lento leftScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
                             <div class="linhaLogo"></div>
-                            <div class="starPequena medio leftScroll"><img src="img/Star.svg" alt=""></div>
+                            <div class="star medio leftScroll"><i class="fa-solid fa-star fa-2xl" style="color: #ffffff;"></i></div>
 
                         </div>
 
@@ -500,7 +527,7 @@
 
                     </div>
 
-                    <span class="texto cantinho leftScroll">Quae delectus officiis pariatur soluta perspiciatis ex aliquam, in fugiat.</span>
+                    <span class="texto cantinho leftScroll texto35"></span>
 
                 </div>
 
@@ -518,20 +545,20 @@
                             <div class="icon"><a href=""><img src="img/facebook.svg" alt=""></a></div>
                         </div>
 
-                        <h2 class="titulo">@SuperNova_Studios</h2>
+                        <h2 class="titulo texto36"></h2>
 
-                        <p class="texto">Sequi amet facere error ad molestias, odit, repellat incidunt voluptate quis, in mollitia? Voluptatem tempora fugiat ratione exercitationem dolorem recusandae reprehenderit ex.</p>
+                        <p class="texto texto37"></p>
 
                     </div>
 
 
                     <div class="apoiar rightScroll">
 
-                        <h3 class="subTitulo">Venha apoiar o nosso projeto:</h3>
+                        <h3 class="subTitulo texto38"></h3>
 
                         <div class="icon rightScroll"><a href=""><img src="img/doacao.svg" alt=""></a></div>
 
-                        <p class="texto">Excepturi praesentium vitae voluptates, sunt quam, sequi vero sed nulla eius laudantium id corporis soluta nobis fugiat iure nam, repellat maxime doloribus?</p>
+                        <p class="texto texto39"></p>
 
                     </div>
 
