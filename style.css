@@ -63,6 +63,14 @@ html{
 @font-face {font-family: 'rosie';
     src: url(font/Rosie\ Brown\ Serif\ Demo.otf);}
 /* Animação */
+@keyframes rotacao {
+    
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }}
 @keyframes animate {
     0% {
         opacity: 0.3;
@@ -131,7 +139,7 @@ html{
     }
 
     50%{
-        padding-top: 10px;
+        padding-top: 5px;
     }}
 @keyframes orbitaPequena {
     0%{
@@ -192,6 +200,10 @@ html{
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 body{
     background-color: var(--preto);} */
+.imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
 .saturno{
     animation: infinite orbita 8s;
     height: 360px;}
@@ -292,7 +304,7 @@ body{
 #nossoTrabalho .titulo{
     color: var(--branco);}
 .carrossel{
-    height: 700px;
+    height: auto;
     position: relative;}
 #carrosselImagem{
     transition: 0.5s opacity;
@@ -346,7 +358,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    align-items: center;}
+    align-items: center;
+    margin: 25px 0}
 #nossaHistoria .prototipo{
     width: 620px;
     height: 870px;}
@@ -367,7 +380,7 @@ body{
     flex-direction: column;
     align-items: center;}
 #historiaStar{
-    height: 80px;
+    height:auto;
     display: flex;
     justify-content: space-between;
     width: 100%;} 
@@ -391,9 +404,10 @@ body{
     height: 870px;}
 #personagens .conteudo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    margin-top: 200px;}
+    margin-top: 200px;
+    height: 100vh;}
 #personagens .texto,
 #personagens .subtexto{
     width: 600px;}
@@ -410,8 +424,8 @@ body{
     top: 0; }
 #lastStar{
     position: absolute;
-    left: -10px;
-    top: 830px;}
+    left: -100px;
+    bottom: 0px;}
 #personagens .inverter{
     position: relative;
     margin: 0;}
@@ -880,6 +894,38 @@ body{
     position: absolute;
     top: 20px;
     right: 650px;}
+.starCarregar7{
+    position: absolute;
+    top: 90%;
+    right: 5%;}
+.starCarregar8{
+    position: absolute;
+    top: 5%;
+    left: 5%;}
+.starCarregar9{
+    position: absolute;
+    top: 5%;
+    right: 15%;}
+.starCarregar10{
+    position: absolute;
+    top: 35%;
+    left: 55%;}
+.starCarregar11{
+    position: absolute;
+    top: 85%;
+    right: 15%;}
+.starCarregar12{
+    position: absolute;
+    top: 90%;
+    left: 9%;}
+.starCarregar13{
+    position: absolute;
+    top: 89%;
+    left: 49%;}
+.starCarregar14{
+    position: absolute;
+    top: 20%;
+    left: 34%;}
 .iconCheck{
     color: var(--branco);
     margin-bottom: 100px;}
@@ -939,15 +985,31 @@ body{
 /* coisinhas */
 .section{
     position: relative;}
-
+.galaxia{
+    animation: rotacao infinite linear reverse 10s;
+    width: 25px;
+    filter: drop-shadow(0 0 5px var(--branco));}
 .satelite,
-.antena{
-    color: var(--branco);
+.antena,
+.planet,
+.foguete,
+.galaxia{
     position: absolute;}
 .satelite,
 .antena,
-.star{
-    filter: drop-shadow(0 0 10px var(--branco));}
+.star,
+.planet,
+.foguete{
+    filter: drop-shadow(0 0 10px var(--branco));
+    color: var(--branco);}
+.M{
+    font-size: 40px;}
+.G{
+    font-size: 50px;}
+.P{
+    font-size: 30px;}
+
+
 /* parte2 */
 .local1{
     top: 14%;
@@ -966,5 +1028,26 @@ body{
     right: 18%;
     top: 13%;}
 .local6{
-    left: 21%;
-    top: 53%;}
+    left: 3%;
+    top: 75%;}
+/* parte4 */
+.local7{
+    top: 7%;
+    right: 13%;}
+.local8{
+    top: 40%;
+    left: 4%;}
+.local9{
+    top: 93%;
+    left: 22%;}
+.local10{
+    top: 5%;
+    right: 5%}
+.local11{
+    top: 5%;
+    right: 5%;}
+/* parte5 */
+.local12{
+    top: 2%;
+    left: 20%;}
+
