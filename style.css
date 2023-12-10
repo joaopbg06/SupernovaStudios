@@ -200,6 +200,15 @@ html{
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 body{
     background-color: var(--preto);} */
+#main{
+    position: relative;
+}
+#main .line::after{
+    animation: drop 20s 0s infinite;}
+#main .line:nth-child(1)::after {
+    animation-delay: 10s;}
+#main .line:nth-child(3)::after {
+    animation-delay: 15s;}
 .imagem{
     display: flex;
     justify-content: center;
@@ -280,7 +289,8 @@ body{
 .videoFerreiro{
     width: 400px;
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+    z-index: 2;}
 .forja{
     margin-top: 250px;
     width: 800px;
@@ -306,6 +316,8 @@ body{
 .carrossel{
     height: auto;
     position: relative;}
+.sketches{
+    z-index: 2;}
 #carrosselImagem{
     transition: 0.5s opacity;
     background-image: url(img/imagem1.png);
@@ -481,7 +493,8 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin: 150px 0 0;}
+    margin: 150px 0 0;
+    z-index: 2;}
 .cards .texto {
     font: var(--fontTextoFotter);
     padding: 0 15px;}
@@ -577,7 +590,8 @@ body{
     margin: 50px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;}
+    align-items: center;
+    z-index: 2;}
 #tituloForja{
     display: flex;
     flex-direction: column;
@@ -602,7 +616,8 @@ body{
 #tituloForjaTexto{
     transition: all 1s linear;}
 #btnCamera .star{
-    height: 80px;}
+    max-width: 15px 0 0 ;}
+
 /* footer */
 #footer{
     color: var(--branco);
@@ -636,7 +651,7 @@ body{
     justify-content: space-between;
     width: 200px;}
 .divisaoEstrelas .linhaLogo{
-    width: 15vw;}
+    width: 10vw;}
 .divisaoEstrelas{
     display: flex;
     align-items: center;
@@ -841,7 +856,8 @@ body{
     right: 0;
     height: 100%;
     margin: auto;
-    width: 90vw;}
+    width: 90vw;
+    z-index: 1;}
 .line {
     position: absolute;
     width: 1px;
@@ -993,13 +1009,15 @@ body{
 .antena,
 .planet,
 .foguete,
-.galaxia{
+.galaxia,
+.meteoro{
     position: absolute;}
 .satelite,
 .antena,
 .star,
 .planet,
-.foguete{
+.foguete,
+.meteoro{
     filter: drop-shadow(0 0 10px var(--branco));
     color: var(--branco);}
 .M{
@@ -1046,6 +1064,18 @@ body{
 .local11{
     top: 5%;
     right: 5%;}
+.local13{
+    top: 58%;
+    left: 40%;}
+.local14{
+    top: 60%;
+    right: 4%;}
+.local15{
+    top: 54%;
+    right: 5%;}
+.local16{
+    top: 95%;
+    right: 15%;}
 /* parte5 */
 .local12{
     top: 2%;
