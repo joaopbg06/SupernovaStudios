@@ -48,7 +48,10 @@
 .starCarregar6{
     top: 600px;
     right: 200px;}
-
+.starCarregar14 {
+    top: 34%;
+    left: 34%;
+}
 .telaCarregamento
 #barraProgresso{
     width: 85vw;
@@ -209,8 +212,10 @@
     filter: drop-shadow( 0 0 15px var(--preto));}
 .satelite, .antena, .star, .planet, .foguete, .meteoro {
     filter: drop-shadow(0 0 10px var(--branco));
-    color: var(--branco);
-}
+    color: var(--branco);}
+.galaxia {
+    width: 16px;
+    filter: drop-shadow(0 0 5px var(--branco));}
 .M{
     font-size: 25px;}
 .G{
