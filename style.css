@@ -636,7 +636,7 @@ body{
     background-position: 50% 20%;
     flex-direction: row;
     background-image: url(img/fundoEstrela.png);
-    height: auto;}
+    height: 85vh;}
 #footer .conteiner{
     flex-direction: row;
     justify-content: space-between;
