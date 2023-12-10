@@ -30,28 +30,10 @@
     height: 100%;
     margin: 0;
     width: 90vw;}
-.starCarregar1{
-    left: 120px;
-    top: 198px;}
-.starCarregar2{
-    right: 120px;
-    top: 500px;}
-.starCarregar3{
-    right: 120px;
-    top: 100px;}
-.starCarregar4{
-    left: 90%;
-    top: 200px;}
-.starCarregar5{
-    left: 50px;
-    top: 500px;}
-.starCarregar6{
-    top: 600px;
-    right: 200px;}
+
 .starCarregar14 {
     top: 34%;
-    left: 34%;
-}
+    left: 34%;}
 .telaCarregamento
 #barraProgresso{
     width: 85vw;
