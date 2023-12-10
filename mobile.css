@@ -13,7 +13,8 @@
     --fontSubTituloFooter: 400 15px 'Decol-regular';
     --fontTextoFotter: 400 10px 'Opti-regular';}
 .star{
-    height: auto;}
+    height: auto;
+    margin: 15px 0;}
 .starPequeno{
     height: 25px;}
 .linha1 {
@@ -130,7 +131,7 @@
     height: 40px;
     margin: 10px 0 0 0;}
 .conteudoTexto{
-    margin: 50px 0 0;}
+    width: auto;}
 #personagens .divisaoLogo,
 #BigRightStar,
 #footer .logo{
@@ -217,5 +218,51 @@
 .P{
     font-size: 20px;}
 
+/* parte2 */
+.local3{
+    top: 97%;
+    left: 12%;}
+.local4{
+    top: 60%;
+    right: 6%}
+/* parte3 */
+.local5{
+    right: 7%;
+    top: 13%;}
+.local6{
+    left: 37%;
+    top: 58%;}
+/* parte4 */
+.local7{
+    top: 7%;
+    right: 7%;}
+.local8{
+    top: 40%;
+    left: 4%;}
+.local9{
+    top: 93%;
+    left: 22%;}
+.local10{
+    top: 4%;
+    left: 28%;}
+.local11{
+    top: 5%;
+    right: 5%;}
+.local13{
+    top: 58%;
+    left: 40%;}
+.local14{
+    top: 60%;
+    right: 4%;}
+.local15{
+    top: 54%;
+    right: 5%;}
+.local16{
+    top: 95%;
+    right: 15%;}
+/* parte5 */
+.local12{
+    top: 2%;
+    left: 20%;}
 
 
