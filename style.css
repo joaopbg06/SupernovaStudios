@@ -890,7 +890,7 @@ body{
 .starCarregar1{
     position: absolute;
     left: 30%;
-    top: 20%;}
+    top: 10%;}
 .starCarregar2{
     position: absolute;
     right: 35%;
@@ -914,11 +914,11 @@ body{
 .starCarregar7{
     position: absolute;
     top: 90%;
-    right: 5%;}
+    right: 10%;}
 .starCarregar8{
     position: absolute;
     top: 5%;
-    left: 5%;}
+    left: 10%;}
 .starCarregar9{
     position: absolute;
     top: 5%;

@@ -210,12 +210,15 @@
     font-size: 20px;}
 
 /* parte2 */
+.local1{
+    left: 10%;
+}
 .local3{
     top: 97%;
     left: 12%;}
 .local4{
     top: 60%;
-    right: 6%}
+    right: 10%}
 /* parte3 */
 .local5{
     right: 7%;
@@ -226,12 +229,12 @@
 /* parte4 */
 .local7{
     top: 7%;
-    right: 7%;}
+    right: 10%;}
 .local8{
     top: 40%;
     left: 4%;}
 .local9{
-    top: 90.5%;
+    top: 92%;
     left: 22%;}
 .local10{
     top: 4%;
@@ -241,19 +244,19 @@
     left: 40%;}
 .local14{
     top: 60%;
-    right: 4%;}
+    right: 10%;}
 .local15{
     top: 50%;
-    right: 5%;}
+    right: 10%;}
 .local16{
-    top: 92%;
+    top: 91.5%;
     right: 15%;}
 /* parte5 */
 .local11{
     top: 27%;
-    right: 5%;}
+    right: 10%;}
 .local12{
     top: 29%;
-    left: 6%;}
+    left: 10%;}
 
 
