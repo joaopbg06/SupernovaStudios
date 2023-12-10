@@ -618,7 +618,6 @@ body{
     transition: all 1s linear;}
 #btnCamera .star{
     max-width: 15px 0 0 ;}
-
 /* footer */
 #footer{
     color: var(--branco);
@@ -675,7 +674,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height:84vh;
     align-items: center;}
 .apoiar .icon{
     width: 90px;}
@@ -695,10 +694,9 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;}
-#footer .logo,
-#footer .patrocinadores{
-    margin-bottom: 100px;}
+    height:84vh;}
+#footer .logo{
+    height: 100%;}
 /* Tela carramento */
 .btnCarregar {
     position: relative;
@@ -1027,8 +1025,6 @@ body{
     font-size: 50px;}
 .P{
     font-size: 30px;}
-
-
 /* parte2 */
 .local1{
     top: 14%;
@@ -1081,4 +1077,3 @@ body{
 .local12{
     top: 2%;
     left: 20%;}
-

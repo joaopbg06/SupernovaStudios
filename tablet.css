@@ -1,11 +1,4 @@
-.starCarregar3{
-    position: absolute;
-    right: 430px;
-    top: 5%;}
-.starCarregar4{
-    position: absolute;
-    left: 450px;
-    top: 80%;}
+
 :root {
     --StarPequeno: 20px;
     --StarPadrao: 30px;

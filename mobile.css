@@ -30,7 +30,6 @@
     height: 100%;
     margin: 0;
     width: 90vw;}
-
 .starCarregar14 {
     top: 34%;
     left: 34%;}
@@ -39,7 +38,6 @@
     width: 85vw;
     height: 20px;
     margin-top: 20px;}
-
 .texto-logo {
     transition-delay: 1s;
     text-align: center;
@@ -73,8 +71,7 @@
     height: 50px;
     margin: 20px 0 40px;}
 .sessao .tituloLogo{
-    padding: 50px 0;
-}
+    padding: 50px 0;}
 .conteiner{
     margin: 0 40px;}
 .linhaLogo{
@@ -208,11 +205,9 @@
     font-size: 30px;}
 .P{
     font-size: 20px;}
-
 /* parte2 */
 .local1{
-    left: 10%;
-}
+    left: 10%;}
 .local3{
     top: 97%;
     left: 12%;}
@@ -258,5 +253,3 @@
 .local12{
     top: 29%;
     left: 10%;}
-
-

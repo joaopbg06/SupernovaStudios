@@ -378,4 +378,3 @@ function escolher(idioma){
         .catch(error => console.error('Erro buscando textos: ', error));
 }
 escolher('ptbr')
-
