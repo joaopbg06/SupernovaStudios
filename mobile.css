@@ -13,7 +13,7 @@
     --fontSubTituloFooter: 400 15px 'Decol-regular';
     --fontTextoFotter: 400 10px 'Opti-regular';}
 .star{
-    height: auto;
+    height: 10px;
     margin: 15px 0;}
 .starPequeno{
     height: 25px;}
@@ -90,6 +90,9 @@
 .logoMain{
     height: 50px;
     margin: 20px 0 40px;}
+.sessao .tituloLogo{
+    padding: 50px 0;
+}
 .conteiner{
     margin: 0 40px;}
 .linhaLogo{
@@ -131,7 +134,7 @@
 #conteudo .star,
 .sessao .star,
 #btnCamera .star{
-    height: 40px;
+    height: 10px;
     margin: 10px 0 0 0;}
 .conteudoTexto{
     width: auto;}
@@ -198,7 +201,8 @@
     opacity: 1;
     filter: blur(0);
     transition: all 2s;}
-.starGrande{
+.starGrande,
+.divisaoTextoEstrela{
     margin: 20px  0 10px;}
 .linhaTexto{
     margin: 0;}
@@ -245,29 +249,29 @@
     top: 40%;
     left: 4%;}
 .local9{
-    top: 93%;
+    top: 90.5%;
     left: 22%;}
 .local10{
     top: 4%;
     left: 28%;}
-.local11{
-    top: 5%;
-    right: 5%;}
 .local13{
-    top: 58%;
+    top: 60%;
     left: 40%;}
 .local14{
     top: 60%;
     right: 4%;}
 .local15{
-    top: 54%;
+    top: 50%;
     right: 5%;}
 .local16{
-    top: 95%;
+    top: 92%;
     right: 15%;}
 /* parte5 */
+.local11{
+    top: 27%;
+    right: 5%;}
 .local12{
-    top: 2%;
-    left: 20%;}
+    top: 29%;
+    left: 6%;}
 
 

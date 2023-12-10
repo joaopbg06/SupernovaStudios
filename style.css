@@ -1062,9 +1062,6 @@ body{
 .local10{
     top: 5%;
     right: 5%}
-.local11{
-    top: 5%;
-    right: 5%;}
 .local13{
     top: 58%;
     left: 40%;}
@@ -1078,6 +1075,9 @@ body{
     top: 95%;
     right: 15%;}
 /* parte5 */
+.local11{
+    top: 5%;
+    right: 5%;}
 .local12{
     top: 2%;
     left: 20%;}
