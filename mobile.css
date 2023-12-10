@@ -13,7 +13,7 @@
     --fontSubTituloFooter: 400 15px 'Decol-regular';
     --fontTextoFotter: 400 10px 'Opti-regular';}
 .star{
-    height: 30px;}
+    height: auto;}
 .starPequeno{
     height: 25px;}
 .linha1 {
@@ -111,7 +111,8 @@
 #nossaHistoria .conteudo,
 #personagens .conteudo,
 .myCard{
-    margin: 50px 0;}
+    margin: 50px 0;
+    width: 100%;}
 #nossaHistoria .conteudoImagem{
     flex-wrap: wrap;}
 .imagem{
@@ -146,7 +147,7 @@
     flex-wrap: wrap;
     margin: 0;}
 .estrelaForja{
-    width: 240px;
+    width: 100%;
     height: 60vh;}
 #tituloCamera{
     padding: 0 10px;}
@@ -200,10 +201,21 @@
 #personagens .sessao .linhaTexto p{
     margin: 10px 0 20px;}
 .textoLogo{
-    width: 100px;
+    width: 100px;}
+.carrosselImagem {
+    width: auto;
+    height: auto;
+    filter: drop-shadow( 0 0 15px var(--preto));}
+.satelite, .antena, .star, .planet, .foguete, .meteoro {
+    filter: drop-shadow(0 0 10px var(--branco));
+    color: var(--branco);
 }
-
-
+.M{
+    font-size: 25px;}
+.G{
+    font-size: 30px;}
+.P{
+    font-size: 20px;}
 
 
 

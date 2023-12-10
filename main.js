@@ -305,6 +305,12 @@
 
 // mobile
 
+let estrelas = document.querySelectorAll('.star');
+let luas = document.querySelectorAll('.lua');
+let meteoros = document.querySelectorAll('.meteoro');
+let satelites = document.querySelectorAll('.satelite');
+let antenas = document.querySelectorAll('.antena');
+
 window.onload = function() {
     checkScreenSize();
 };
@@ -315,21 +321,47 @@ window.onresize = function() {
 
 function checkScreenSize() {
     if (window.innerWidth <= 425) {
+    
+        estrelas.forEach(Element => {
+            Element.classList.remove('fa-xl')
+            Element.classList.add('fa-2xs')
+        })
+        satelites.forEach(Element => {
+            Element.classList.remove('fa-xl')
+            Element.classList.add('fa-2xs')
+        })
 
-        document.querySelector('#carregar').addEventListener("click", function () {
-            setTimeout( () => {
-                clickBtnCarregar()
-            },1000)
-        });
+        antenas.forEach(Element => {
+            Element.classList.remove('fa-xl')
+            Element.classList.add('fa-2xs')
+        })
 
+        meteoros.forEach(Element => {
+            Element.classList.remove('fa-xl')
+            Element.classList.add('fa-2xs')
+        })
+
+        luas.forEach(Element => {
+            Element.classList.remove('fa-lg')
+            Element.classList.add('fa-2xs')
+        })
+
+    } else if (window.innerWidth > 425 && window.innerWidth <= 768) {
+        // Lógica para tela maior que 425px e menor ou igual a 768px
     } else {
-
-        document.querySelector('#carregar').addEventListener("click", function () {
-            clickBtnCarregar()
-        });
-        
+        // Lógica para tela maior que 768px
     }
 };
+
+document.querySelector('#carregar').addEventListener("click", function () {
+    if (window.innerWidth <= 425) {
+        setTimeout( () => {
+            clickBtnCarregar()
+        },1000);
+    } else {
+        clickBtnCarregar();
+    }
+});;
 
 // json
 

@@ -201,8 +201,9 @@ html{
 body{
     background-color: var(--preto);} */
 #main{
-    position: relative;
-}
+    position: relative;}
+#main .lines {
+    z-index: 1;}
 #main .line::after{
     animation: drop 20s 0s infinite;}
 #main .line:nth-child(1)::after {
@@ -857,7 +858,7 @@ body{
     height: 100%;
     margin: auto;
     width: 90vw;
-    z-index: 1;}
+    z-index: 0;}
 .line {
     position: absolute;
     width: 1px;
