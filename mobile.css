@@ -71,7 +71,7 @@
     height: 50px;
     margin: 20px 0 40px;}
 .sessao .tituloLogo{
-    padding: 50px 0;}
+    padding: 0;}
 .conteiner{
     margin: 0 40px;}
 .linhaLogo{
@@ -94,12 +94,9 @@
 #nossoTrabalho .titulo{
     margin-bottom: 50px;}
 #nossoTrabalho .conteudo,
-#nossaHistoria .conteudo,
-#personagens .conteudo,
 .myCard{
     margin: 50px 0;
-    width: 100%;
-    height: 350px;}
+    width: 100%;}
 #nossaHistoria .conteudoImagem{
     flex-wrap: wrap;}
 .imagem{
@@ -112,22 +109,24 @@
 #conteudo .texto{
     margin: 10px 0;}
 #conteudo .star,
-.sessao .star,
+
 #btnCamera .star{
     height: 10px;
-    margin: 10px 0 0 0;}
+    margin: 10px 0 0;}
+#conteudo .star{
+    max-width: 10px 0 20px;}
 .conteudoTexto{
-    width: auto;}
-#personagens .divisaoLogo,
-#BigRightStar,
-#footer .logo{
+    width: auto;
+    margin: 30px 0;}
+#footer .logo,
+#nossaHistoria .conteudoImagem
+{
     margin: 0;}
 #firstStar{
     left: 0;}
 #BigRightStar{
     display: none;}
-.sessao{
-    margin-top: 25px;} 
+
 #linhaLogoMaior{
     width: 50vw;}
 .cards{
@@ -187,7 +186,7 @@
 .linhaTexto{
     margin: 0;}
 #personagens .sessao .linhaTexto p{
-    margin: 10px 0 20px;}
+    margin: 5px;}
 .textoLogo{
     width: 100px;}
 .carrosselImagem {
@@ -206,52 +205,47 @@
     font-size: 30px;}
 .P{
     font-size: 20px;}
-/* parte2 */
-.local1{
-    left: 10%;}
-.local3{
-    top: 97%;
-    left: 12%;}
-.local4{
-    top: 60%;
-    right: 10%}
-/* parte3 */
-.local5{
-    right: 7%;
-    top: 13%;}
-.local6{
-    left: 37%;
-    top: 58%;}
-/* parte4 */
-.local7{
-    top: 7%;
-    right: 10%;}
-.local8{
-    top: 40%;
-    left: 4%;}
-.local9{
-    top: 92%;
-    left: 22%;}
-.local10{
-    top: 4%;
-    left: 28%;}
-.local13{
-    top: 60%;
-    left: 40%;}
 .local14{
-    top: 60%;
-    right: 10%;}
-.local15{
-    top: 50%;
-    right: 10%;}
-.local16{
-    top: 91.5%;
-    right: 15%;}
-/* parte5 */
-.local11{
-    top: 27%;
-    right: 10%;}
+    margin: 30px 0 20px;}
+.local13{
+    margin: 0 0 25px;}
 .local12{
-    top: 29%;
-    left: 10%;}
+    margin: 5px 0;}
+#antes-sessao{
+    height: 100px;
+    margin: 0 0 30px;}
+#personagens .conteudo{
+    height: auto;}
+.local6{
+    margin: 0px 0 30px;}
+.local7{
+    margin: 10px 0;}
+#personagens .divisaoLogo{
+    margin: 0px 0 50px ;}
+.position {
+    height: 30px;}
+.local5{
+    top: 10px;}
+#nossaHistoria .conteudo{
+    margin: 30px 0 0;}
+#lastStar{
+    display: none;}
+.sessao .star{
+    display: none;}
+.local9{
+    top: 10% ;}
+.local15{
+    margin: 25px 0 0;}
+.myCard{
+    height: 350px;
+}
+
+
+
+
+
+
+
+
+
 

@@ -303,8 +303,7 @@ body{
     align-items: center;}
 .subLinha{
     width: 450px;
-    border: 1.2px var(--preto) solid;
-    margin: 30px 0 0;}
+    border: 1.2px var(--preto) solid;}
 #forja .conteiner{
     justify-content: space-around;}
 /* Parte 2 */
@@ -470,7 +469,6 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 200px 0 250px;
     align-items: center;
     justify-content: center;}
 .linhaTopTexto{
@@ -493,7 +491,7 @@ body{
     color: var(--branco);}
 .cards{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin: 150px 0 0;
@@ -579,7 +577,8 @@ body{
 .btnCamera{
     background-color: transparent;
     cursor: pointer;
-    transition: all 1s linear;}
+    transition: all 1s linear;
+    height: 50px;}
 #tituloCamera{
     transition: all 1s linear;}
 #camera{
@@ -1002,8 +1001,6 @@ body{
     filter: blur(0);
     transition: all 1s;}
 /* coisinhas */
-.section{
-    position: relative;}
 .galaxia{
     animation: rotacao infinite linear reverse 10s;
     width: 25px;
@@ -1022,7 +1019,6 @@ body{
     font-size: 50px;}
 .P{
     font-size: 30px;}
-
 .position{
     position: relative;
     width: 100%;}
@@ -1069,3 +1065,19 @@ body{
     position: absolute;
     left: 10%;
     bottom: 10%;}
+.local13{
+    margin: 100px 0;
+    width: 85%;
+    display: flex;
+    justify-content: center;}
+.local14{
+    margin: 50px 0;
+    width: 60%;}   
+/* parte5 */
+.local15{
+    margin:50px 0 0;}
+.local16{
+    transform: rotate(-45deg);
+    margin: 0 200px}
+.local17{
+    transform: rotate(135deg);}
