@@ -5,13 +5,13 @@
 
     --StarGrandeAltura: 50px;
 
-    --fontTitulo: 400 20px 'Opti-Regular', sans-serif;
-    --fontSubTitulo: 400 12px 'Decol-regular';
-    --fontTexto: 400 10px 'Opti-regular';
+    --fontTitulo: 400 20px 'cream';
+    --fontSubTitulo: 400 12px 'pulang';
+    --fontTexto: 400 10px 'cream';
 
-    --fontTituloFooter: 400 20px 'Opti-Regular', sans-serif;
-    --fontSubTituloFooter: 400 15px 'Decol-regular';
-    --fontTextoFotter: 400 10px 'Opti-regular';}
+    --fontTituloFooter: 400 20px 'cream';
+    --fontSubTituloFooter: 400 15px 'pulang';
+    --fontTextoFotter: 400 10px 'cream';}
 .star{
     height: 10px;
     margin: 15px 0;}
@@ -98,7 +98,8 @@
 #personagens .conteudo,
 .myCard{
     margin: 50px 0;
-    width: 100%;}
+    width: 100%;
+    height: 350px;}
 #nossaHistoria .conteudoImagem{
     flex-wrap: wrap;}
 .imagem{
@@ -253,3 +254,4 @@
 .local12{
     top: 29%;
     left: 10%;}
+

@@ -19,13 +19,13 @@ html{
 
     --StarGrandeAltura: 210px;
 
-    --fontTitulo: 400 40px 'Opti-Regular',sans-serif;
-    --fontSubTitulo: 400 30px 'Decol-regular';
-    --fontTexto: 400 25px 'Opti-regular';
+    --fontTitulo: 400 40px 'cream';
+    --fontSubTitulo: 400 30px 'pulang';
+    --fontTexto: 400 25px 'cream';
 
-    --fontTituloFooter: 400 30px 'Opti-Regular',sans-serif;
-    --fontSubTituloFooter: 400 20px 'Decol-regular';
-    --fontTextoFotter: 400 15px 'Opti-regular';
+    --fontTituloFooter: 400 30px 'cream';
+    --fontSubTituloFooter: 400 20px 'pulang';
+    --fontTextoFotter: 400 20px 'cream';
 
     --amarelo: #F0E32E;
     --roxoDiferente: #68519B;
@@ -62,6 +62,8 @@ html{
     src: url(font/Please\ write\ me\ a\ song.ttf);}
 @font-face {font-family: 'rosie';
     src: url(font/Rosie\ Brown\ Serif\ Demo.otf);}
+@font-face {font-family: 'pulang';
+    src: url(font/Pulang.otf)}
 /* Animação */
 @keyframes rotacao {
     
@@ -396,7 +398,8 @@ body{
     height:auto;
     display: flex;
     justify-content: space-between;
-    width: 100%;} 
+    width: 100%;
+    margin: 30px 0;} 
 #conteudo .star{
     margin: 25px 0;}
 #nossaHistoria #conteudo{
@@ -419,7 +422,6 @@ body{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-top: 200px;
     height: 100vh;}
 #personagens .texto,
 #personagens .subtexto{
@@ -443,13 +445,13 @@ body{
     position: relative;
     margin: 0;}
 #BigRightStar{
-    margin-left: 55%;
-    margin-top: 100px;}
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: end}
 .sessao{
-    width: 99vw;
-    margin-top: 100px;}
+    width: 99vw;}
 .sessao .star{
-    margin-right: 75%;
     margin-top: 50px}
 .sessao .conteudo{
     justify-content: center;
@@ -501,8 +503,8 @@ body{
     padding: 0 15px;}
 .myCard {
     background-color: transparent;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     perspective: 1000px;}
 .title {
     font-size: 1.5em;
@@ -558,10 +560,12 @@ body{
     animation: animate 5s linear infinite;}
 .card1 .frontSide,
 .card1 .frontSide::before{
-    background-image: url(img/desilucao.png);}
+    background-image: url(img/desilucao.png);
+    background-position: center;}
 .card2 .frontSide,
 .card2 .frontSide::before{
-    background-image: url(img/liz.png);}
+    background-image: url(img/liz.png);
+    background-position: center;}
 .estrelaForja{
     background: linear-gradient(0deg, #663679 -39.36%, #470D54 100%);;
     width: 1000px;
@@ -1006,13 +1010,6 @@ body{
     filter: drop-shadow(0 0 5px var(--branco));}
 .satelite,
 .antena,
-.planet,
-.foguete,
-.galaxia,
-.meteoro{
-    position: absolute;}
-.satelite,
-.antena,
 .star,
 .planet,
 .foguete,
@@ -1025,55 +1022,50 @@ body{
     font-size: 50px;}
 .P{
     font-size: 30px;}
+
+.position{
+    position: relative;
+    width: 100%;}
 /* parte2 */
 .local1{
-    top: 14%;
-    left: 12%;}
+    width: 100%;}
 .local2{
-    top: 35%;
-    right: 9%;}
+    width: 100%;
+    display: flex;
+    justify-content: end;}
 .local3{
-    top: 83%;
-    left: 12%;}
-.local4{
-    top: 70%;
-    right: 6%}
+    width: 100%;
+    margin-bottom: 20px;}
 /* parte3 */
+.local4{
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    margin: 10px 0;}
 .local5{
-    right: 18%;
-    top: 13%;}
-.local6{
-    left: 3%;
-    top: 75%;}
+    position: absolute;
+    right: 20%;
+    top: 30px;}
 /* parte4 */
-.local7{
-    top: 7%;
-    right: 13%;}
+.local6{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    margin: 50px 0;}
 .local8{
-    top: 40%;
-    left: 4%;}
+    position: absolute;
+    right: 0;}
+#antes-sessao{
+    height: 300px;}
 .local9{
-    top: 93%;
-    left: 22%;}
+    position: absolute;
+    right: 10%;
+    top: 50%;}
 .local10{
-    top: 5%;
-    right: 5%}
-.local13{
-    top: 58%;
-    left: 40%;}
-.local14{
-    top: 60%;
-    right: 4%;}
-.local15{
-    top: 54%;
-    right: 5%;}
-.local16{
-    top: 95%;
-    right: 15%;}
-/* parte5 */
+    position: absolute;
+    left: 50%;
+    top: 50%;}
 .local11{
-    top: 5%;
-    right: 5%;}
-.local12{
-    top: 2%;
-    left: 20%;}
+    position: absolute;
+    left: 10%;
+    bottom: 10%;}
