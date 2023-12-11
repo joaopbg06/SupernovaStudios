@@ -109,7 +109,6 @@
 #conteudo .texto{
     margin: 10px 0;}
 #conteudo .star,
-
 #btnCamera .star{
     height: 10px;
     margin: 10px 0 0;}
@@ -119,14 +118,10 @@
     width: auto;
     margin: 30px 0;}
 #footer .logo,
-#nossaHistoria .conteudoImagem
-{
+#nossaHistoria .conteudoImagem{
     margin: 0;}
 #firstStar{
     left: 0;}
-#BigRightStar{
-    display: none;}
-
 #linhaLogoMaior{
     width: 50vw;}
 .cards{
@@ -237,9 +232,11 @@
 .local15{
     margin: 25px 0 0;}
 .myCard{
-    height: 350px;
-}
-
+    height: 350px;}
+.local4{
+    margin: 0px 0 30px;}
+.local3{
+    margin: 0;;}
 
 
 
