@@ -148,7 +148,6 @@
     
     const IMG = document.getElementById('carrosselImagem');
     const bolinhas = document.querySelectorAll('.bolinha');
-    const progressoCarrossel = document.querySelectorAll('.progressoCarrossel');
     
     let touchStartX = 0;
     let touchEndX = 0;
