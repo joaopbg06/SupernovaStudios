@@ -249,9 +249,13 @@
 #footer .fundo{
     height: 90vh;
     background-position: 50% 25%;}
-
-
-
+.btnCarregar{
+    font-size: 20px;}
+.textoCarregamento{
+    font-size: 15px;}
+.texto-logo{
+    font-size: 40px;
+}
 
 
 
