@@ -32,9 +32,11 @@
     width: 90vw;}
 .starCarregar14 {
     top: 34%;
-    left: 34%;}
+    left: 10%;}
 .starCarregar5{
     display: none;}
+.starCarregar6{
+    left: 15%;}
 .telaCarregamento
 #barraProgresso{
     width: 85vw;
@@ -83,7 +85,8 @@
 #personagens .divisaoLogo .linhaLogo{
     width: 25vw;}
 #carrosselImagem{
-    height: 250px;}
+    height: 250px;
+    width: 75vw;}
 .legenda{
     font-size: var(--fontTexto);}
 .carrossel{
@@ -148,35 +151,35 @@
 .logo{
     height: auto;}
 #footer .logo{
-    width: 240px;}
+    width: 150px;}
 .iconesDivulgacao .icon{
     width: 30px;}
 .descerScroll{
     transform: translateY(-100px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .subirScroll{
     transform: translateY(100px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .leftScroll{
     transform: translatex(-25px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .rightScroll{
     transform: translatex(25px);
     opacity: 0;
     filter: blur(3px);
-    transition: all 2s;}
+    transition: all 1s;}
 .depoisScroll{
     transform: translateY(0);
     transform: translateX(0);
     opacity: 1;
     filter: blur(0);
-    transition: all 2s;}
+    transition: all 1s;}
 .starGrande,
 .divisaoTextoEstrela{
     margin: 20px  0 10px;}
@@ -239,8 +242,13 @@
     margin: 0px 0 30px;}
 .local3{
     margin: 0;;}
-
-
+.cards .texto {
+    font: var(--fontTextoFotter);
+    font-size:  12px;
+    padding: 0 15px;}
+#footer .fundo{
+    height: 90vh;
+    background-position: 50% 25%;}
 
 
 

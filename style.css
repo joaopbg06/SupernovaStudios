@@ -477,6 +477,7 @@ body{
     width: 85%;
     padding-bottom: 50px;}
 /* Parte 5 */
+
 #estilo{
     background: var(--fundoRoxo3);
     color: var(--branco);}
@@ -489,6 +490,7 @@ body{
     z-index: 2;}
 .cards .texto {
     font: var(--fontTextoFotter);
+    font-size:  17px;
     padding: 0 15px;}
 .myCard {
     background-color: transparent;

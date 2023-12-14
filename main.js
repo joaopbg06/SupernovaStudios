@@ -381,9 +381,19 @@ escolher('ptbr')
 
 //video
 
-document.addEventListener('DOMContentLoaded', function() {
-    var meuVideo = document.getElementById('meuVideo');
-    meuVideo.addEventListener('canplaythrough', function() {
-        meuVideo.play();
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById('myVideo');
+    var videoContainer = document.getElementById('video-container');
+
+    video.addEventListener('canplay', function() {
+        video.play();
+    });
+
+    videoContainer.addEventListener('mouseenter', function() {
+        video.play();
+    });
+
+    videoContainer.addEventListener('mouseleave', function() {
+        video.pause();
     });
 });
