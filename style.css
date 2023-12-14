@@ -28,20 +28,20 @@ html{
     --fontTextoFotter: 400 15px 'cream';
 
     --amarelo: #F0E32E;
-    --roxoDiferente: #68519B;
-    --roxoEscuro: #661EAB;
-    --roxo1:#8F3DA3;
-    --roxo2: #FFA1F6;
+    --roxoDiferente: #311730;
+    --roxoEscuro: #311730;
+    --roxo1:#2d1434;
+    --roxo2: #1f0c1d;
     --cinza: #D9D9D9;
     --branco: #fff;
     --preto: #000;
 
     --fundoBrancoRoxo: linear-gradient(0deg, rgba(104, 42, 167, 0.65) -33.65%, rgba(255, 161, 246, 0.00) 138.46%);
-    --fundoRoxo1: linear-gradient(337deg, rgba(72, 32, 99, 0.97) 9.97%, rgba(87, 39, 98, 0.97) 73.66%);
-    --fundoRoxo2: linear-gradient(180deg, #4E2767 10.33%, #7E468C 47.1%, #4E2767 88.73%);
-    --fundoRoxo3: linear-gradient(180deg, #4E2767 0%, #460C53 38.27%, #663679 76.53%);;
-    --fundoRoxo4: linear-gradient(180deg, #4E2767 0%, #460D54 19.8%, #663679 39.59%, #460D54 59.39%, #4D2566 98.99%);
-    --corDivicao: linear-gradient(180deg, #663679 0%, #481257 100%);}
+    --fundoRoxo1: linear-gradient(0deg, #271634 0%, #120919 53.44%, #321731 100%);
+    --fundoRoxo2: linear-gradient(180deg, #281735 0.14%, #1F0825 53.29%, #21112B 99.36%);
+    --fundoRoxo3: linear-gradient(180deg, #21112B 9.35%, #460D54 40.66%, #170A20 70.62%, #460D54 98.99%);
+    --fundoRoxo4: linear-gradient(180deg, #450D52 4.75%, #261132 23.1%, #1F1026 59.45%, #261132 84.89%, #460D54 98.57%);
+    --corDivicao: linear-gradient(180deg, #450D52 9.38%, #22102C 89.58%);}
 @font-face {font-family: 'webcomic';
     src: url(font/Webcomic.ttf);}
 @font-face {font-family:'OsdMono' ;
@@ -159,7 +159,7 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(img/fundoEstrela.png);
+    background-image: url(img/fundo.png);
     height: 100vh;
     background-position: 50% 90%;}
 #LeftStar{
@@ -254,7 +254,8 @@ body{
     background: var(--corDivicao);
     height: 259px;}
 .conteudo{
-    width: 900px;}
+    width: 900px;
+    text-align: justify;}
 .prototipo{
     background-color: var(--cinza);}
 #main .linha2{
@@ -274,7 +275,7 @@ body{
     margin: 15px 0 30px;}
 .texto{
     font: var(--fontTexto);
-    text-align: center;
+    text-align: justify;
     margin: 5px 0;}
 /* Parte 1 */   
 .video{
@@ -330,9 +331,9 @@ body{
     height: 13px;
     border-radius: 7px;
     padding: 0 1px;
-    background-color: var(--roxo1);
+    background-color: var(--roxoDiferente);
     margin: 15px 5px 0;
-    border: var(--roxo1) 3px solid;
+    border: var(--roxoDiferente) 3px solid;
     cursor: pointer;
     transition: all 1s;
     display: flex;
@@ -340,7 +341,7 @@ body{
 .bolinha.ativa{
     width: 40px;}
 .bolinha.ativa .progressoCarrossel{
-    background-color: var(--roxo2);
+    background-color: var(--amarelo);
     width: 0;
     height: 25%;
     border-radius: 1px;
@@ -399,12 +400,19 @@ body{
 #conteudo .star{
     filter: drop-shadow(0 0 10px var(--branco));}
 #conteudo .texto{
-    margin: 30px 0;}
+    margin: 30px 0;
+    text-align: center;}
 .starNone{
     margin-top: 20px;}
 /* Parte 4 */
+#normalImg{
+    width: auto;}
+.linhaTexto .texto{
+    text-align: center;}
+.imagem{
+    width: 550px;}
 #personagens{
-    background: var(--fundoRoxo4);
+    background: var(--fundoRoxo3);
     color: var(--branco);}
 #personagens .prototipo{
     width: 620px;
@@ -478,7 +486,7 @@ body{
     padding-bottom: 50px;}
 /* Parte 5 */
 #estilo{
-    background: var(--fundoRoxo3);
+    background: var(--fundoRoxo4);
     color: var(--branco);}
 .cards{
     display: flex;
@@ -557,7 +565,7 @@ body{
     background-image: url(img/liz.png);
     background-position: center;}
 .estrelaForja{
-    background: linear-gradient(0deg, #663679 -39.36%, #470D54 100%);;
+    background: linear-gradient(180deg, #1B0A24 14.58%, #261132 100%);
     width: 1000px;
     height: 700px;
     display: flex;
@@ -623,7 +631,7 @@ body{
     height: 50px;
     margin-bottom: 5px;}
 .divFinal{
-    background:  var(--corDivicao);
+    background: linear-gradient(180deg, #22102C 7.81%, #491E64 100%);
     width: 100%;
     height: 50px;}
 #footer .fundo{
@@ -950,7 +958,7 @@ body{
     border-radius: 5px;
     background-color: var(--amarelo);}
 ::-webkit-scrollbar-track {
-    background-color: #460C53;}
+    background-color: #000}
 /* Velocidade star */
 .lento{
     animation: 10s orbita infinite;}
