@@ -25,7 +25,7 @@ html{
 
     --fontTituloFooter: 400 30px 'cream';
     --fontSubTituloFooter: 400 20px 'pulang';
-    --fontTextoFotter: 400 20px 'cream';
+    --fontTextoFotter: 400 15px 'cream';
 
     --amarelo: #F0E32E;
     --roxoDiferente: #68519B;
@@ -143,14 +143,6 @@ html{
     50%{
         padding-top: 5px;
     }}
-@keyframes orbitaPequena {
-    0%{
-        padding-top: 0;
-    }
-
-    50%{
-        padding-top: 5px;
-    }}
 /* header */
 #header .planeta{
     animation: infinite orbita 8s;
@@ -187,21 +179,21 @@ html{
     height: 51px;
     margin-top: 12px;}
 /* Padrão */
-#main, #footer {
+/* #main, #footer {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 #header {
-    transition-delay: 0.1s;}
+    transition-delay: 0.1s;} */
 /*Adiciona um atraso para que o header apareça após a telaCarregamento}*/
-.hidden {
+/* .hidden {
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: opacity 1s ease-in-out, height 1s ease-in-out;}
 body{
-    background-color: var(--preto);}
+    background-color: var(--preto);} */
 #main{
     position: relative;}
 #main .lines {
@@ -420,8 +412,7 @@ body{
 #personagens .conteudo{
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    height: 100vh;}
+    width: 100%;}
 #personagens .texto,
 #personagens .subtexto{
     width: 600px;}
@@ -635,10 +626,10 @@ body{
     width: 100%;
     height: 50px;}
 #footer .fundo{
-    background-position: 50% 20%;
+    background-position: 47% 100%;
     flex-direction: row;
     background-image: url(img/fundoEstrela.png);
-    height: 85vh;}
+    height: auto;}
 #footer .conteiner{
     flex-direction: row;
     justify-content: space-between;
@@ -671,35 +662,30 @@ body{
 .divulgacao{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 400px;}
+    flex-direction: column;}
 .parteRight{
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height:84vh;
+    height: 84vh;
     align-items: center;}
 .apoiar .icon{
     width: 90px;}
 .apoiar{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 500px;}
+    align-items: center;}
 .cantinho{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 500px;
-    text-align: left;}
+    text-align: center;}
 .parteLeft{
-    width: 500px;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height:84vh;}
+    height: 84vh;}
 #footer .logo{
-    height: 100%;}
+    width: 20vw;;}
 /* Tela carramento */
 .btnCarregar {
     position: relative;
@@ -1011,7 +997,7 @@ body{
 .planet,
 .foguete,
 .meteoro{
-    filter: drop-shadow(0 0 10px var(--branco));
+    filter: drop-shadow(0 0 8px var(--branco));
     color: var(--branco);}
 .M{
     font-size: 40px;}

@@ -378,3 +378,12 @@ function escolher(idioma){
         .catch(error => console.error('Erro buscando textos: ', error));
 }
 escolher('ptbr')
+
+//video
+
+document.addEventListener('DOMContentLoaded', function() {
+    var meuVideo = document.getElementById('meuVideo');
+    meuVideo.addEventListener('canplaythrough', function() {
+        meuVideo.play();
+    });
+});
