@@ -194,7 +194,7 @@
     height: auto;
     filter: drop-shadow( 0 0 15px var(--preto));}
 .satelite, .antena, .star, .planet, .foguete, .meteoro {
-    filter: drop-shadow(0 0 8px var(--branco));
+    filter: drop-shadow(0 0 7px var(--branco));
     color: var(--branco);}
 .galaxia {
     width: 16px;

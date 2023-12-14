@@ -424,6 +424,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     videoContainer.addEventListener('mouseleave', function() {
-        video.pause();
+        video.play();
     });
 });
