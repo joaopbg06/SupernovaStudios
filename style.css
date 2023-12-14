@@ -159,6 +159,8 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(img/fundo.png);
     height: 100vh;
     background-position: 50% 90%;}
