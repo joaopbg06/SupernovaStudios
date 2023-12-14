@@ -133,6 +133,98 @@
         }, 1000)
     }
 
+
+    // Carrosel 
+
+    const IMAGENS = [
+        'img/imagem1.png',
+        'img/imagem2.png',
+        'img/imagem3.png',
+        'img/imagem4.png'
+    ];
+    
+    let imgIndice = 0;
+    let intervaloID;
+    
+    const IMG = document.getElementById('carrosselImagem');
+    const bolinhas = document.querySelectorAll('.bolinha');
+    const progressoCarrossel = document.querySelectorAll('.progressoCarrossel');
+    
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    function carregarImagem() {
+        IMG.style.opacity = 0;
+        resetarBolinhas();
+        bolinhas[imgIndice].classList.add('ativa');
+    
+        setTimeout(() => {
+            IMG.style.backgroundImage = `url(${IMAGENS[imgIndice]})`;
+            IMG.style.opacity = 1;
+        }, 500);
+    }
+    
+    function resetarBolinhas() {
+        bolinhas.forEach(bolinha => {
+            bolinha.classList.remove('ativa');
+        });
+    }
+    
+    function passarIMG() {
+        var limite = IMAGENS.length - 1;
+    
+        if (imgIndice < limite) {
+            ++imgIndice;
+            carregarImagem();
+        } else {
+            imgIndice = 0;
+            carregarImagem();
+        }
+    
+        clearInterval(intervaloID);
+        intervaloID = setInterval(passarIMG, 8000);
+    }
+
+    function voltarIMG() {
+    
+        if (imgIndice == 0) {
+            imgIndice = 3;
+            carregarImagem()
+        } else {
+            --imgIndice;
+            carregarImagem();
+        }
+    
+        clearInterval(intervaloID);
+        intervaloID = setInterval(passarIMG, 8000);
+    }
+    
+    bolinhas.forEach((bolinha, index) => {
+        bolinha.addEventListener('click', () => {
+            imgIndice = index;
+            clearInterval(intervaloID);
+            carregarImagem();
+            intervaloID = setInterval(passarIMG, 8000);
+        });
+    });
+    
+    IMG.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+    
+    IMG.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].clientX;
+    
+        if (touchEndX < touchStartX) {
+            passarIMG(); // Deslizar para a esquerda
+        } else if (touchEndX > touchStartX) {
+            voltarIMG()
+        }
+    });
+    
+    passarIMG();
+    
+
     // Animação Scroll
 
     const Observa = new IntersectionObserver((arrastar) => {
